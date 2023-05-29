@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+
+/* пустышки рефера для отладки */
+
+@import 'vendor/bootstrap/functions';
+@import 'vendor/bootstrap/variables';
+@import 'vendor/bootstrap/mixins';
+
+
+/* main */
+
+
+@import 'base/fonts';
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/grid';
+@import 'base/sections';
+
+@import 'layout/bar-top';
+@import 'layout/header';
+@import 'layout/nav';
+@import 'layout/cataloguemenu';
+@import 'layout/collage';
+@import 'layout/footer';
+@import 'layout/bar-bottom';
+@import 'layout/modal';
+@import 'layout/custompage';
+
+@import 'elements/headers';
+@import 'elements/elements';
+@import 'elements/tooltips';
+@import 'elements/links';
+@import 'elements/forms';
+@import 'elements/buttons';
+@import 'elements/lists';
+@import 'elements/tables';
+@import 'elements/ui-slider';
+@import 'elements/fleximages';
+@import 'elements/accordion';
+
+@import 'blocks/category';
+@import 'blocks/productlist';
+@import 'blocks/product';
+@import 'blocks/whybuy';
+@import 'blocks/portfolio';
+@import 'blocks/spec';
+@import 'blocks/banner';
+@import 'blocks/tools';
+@import 'blocks/filter';
+@import 'blocks/filter-cf';
+@import 'blocks/cart';
+@import 'blocks/cabinet';
+@import 'blocks/contact';
+@import 'blocks/compare';
+@import 'blocks/order';
+@import 'blocks/sizes';
+@import 'blocks/tag';
+@import 'blocks/categorycol';
+@import 'blocks/videos';

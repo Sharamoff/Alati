@@ -1,0 +1,47 @@
+///////////////////////////////////////////////
+
+
+
+// почему мы
+
+
+.block-whybuy {
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+  position: relative;
+
+  img {
+    width: 10rem;
+    height: auto;
+    position: absolute;
+  }
+
+  .hdr {
+    font-size: $font-size-base;
+    font-weight: bold;
+    color: $color-hdr;
+    line-height: $line-height-hdr;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-size: $font-size-basemin;
+    color: $color-note;
+    line-height: $line-height-def;
+    margin-left: 11.5rem;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

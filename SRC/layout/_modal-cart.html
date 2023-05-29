@@ -1,0 +1,69 @@
+<div class="modal fade" id="modal_cart" tabindex="-1" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+
+			<div class="modal-header">
+
+				<div class="mc-icon"><i class="fal fa-check"></i></div>
+				<h1>Товар добавлен в корзину!</h1>
+
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+
+			</div>
+
+
+			<div class="modal-body">
+				<form>
+
+					<div class="cartitem">
+						<div class="row">
+							<div class="col-sm-7 col-md-8">
+								<div class="cartitem__label label--action">Акция</div>
+								<div class="cartitem__img"><img src="img/catalogue_gallery/771.jpg" alt=""></div>
+								<div class="cartitem__title">Душевое ограждение <strong>GUWER GK-664RB</strong></div>
+								<div class="cartitem__note">200см, cтекло закаленное стенка 8мм, дверка 6мм, профиль хром, ручки СН02 или СН04...</div>
+							</div>
+							<div class="col-sm-5 col-md-4">
+								<div class="cartitem__quant">
+									<div class="inputnumber">
+										<button class="inputnumber__minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"></button>
+										<input type="number" id="id_cartitem__quant" class="form-control" value="1" min="1">
+										<button class="inputnumber__plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();"></button>
+									</div>
+									<div class="cartitem__quant_per">6 400&nbsp;<i class="fal fa-ruble-sign"></i>/ед.</div>
+								</div>
+								<div class="cartitem__price">
+									<div class="cartitem__price_price rub" id="id_cartitem_ptooltip" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">17 250</div>
+									<div class="cartitem__price_oldprice rub" title="Старая цена">21 200</div>
+									<div class="cartitem__price_diffprice rub" title="Вы экономите">-3 950</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="cartbtns">
+						<div class="row">
+							<div class="col-sm-6 d-sm-flex justify-content-start">
+								<button class="btn b--grd cartbtns__back">Продолжить<span>&nbsp;покупки</span></button>
+							</div>
+							<div class="col-sm-6 d-sm-flex justify-content-end">
+								<button class="btn b--brd cartbtns__clck">Купить в 1 клик</button>
+								<button class="btn b--btn cartbtns__order">Оформить<span>&nbsp;заказ</span></button>
+							</div>
+						</div>
+					</div>
+
+				</form>
+			</div>
+
+
+			<div class="modal-footer">
+				<i class="fas fa-truck"></i>
+				<div>Доставка любого заказа <strong class="rub">300</strong> или <strong>Бесплатно</strong> (при заказе от <span class="rub">30 000</span>).</div>
+			</div>
+
+
+		</div>
+	</div>
+</div>

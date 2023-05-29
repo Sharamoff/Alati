@@ -1,0 +1,881 @@
+.cu-mainhdr {
+	font-family: $font-family-caption;
+	font-size: 3rem;
+	font-weight: normal;
+	color: $color-h;
+	margin-top: 2.5rem;
+	margin-bottom: 3rem;
+	line-height: $line-height-hdr;
+	text-transform: uppercase;
+
+	@include media-breakpoint-down(sm) {
+		margin-top: 1.5rem;
+		margin-bottom: 1.5rem;
+		font-size: $font-size-h2;
+	}
+
+}
+
+.cu-h2 {
+	text-transform: uppercase;
+	line-height: $line-height-min;
+
+	@include media-breakpoint-down(sm) {
+		font-size: $font-size-h3;
+	}
+
+}
+
+.cu-h3 {
+	text-transform: uppercase;
+	line-height: $line-height-min;
+	margin-top: 0;
+
+	@include media-breakpoint-down(sm) {
+		font-size: $font-size-base;
+	}
+
+}
+
+.cu-img {
+	width: 100%;
+	max-width: $cu-blockpic-max;
+	height: auto;
+	border: solid 1px $c-white;
+}
+
+.cu-block {
+	position: relative;
+	max-width: $cu-blockpic-max;
+	border: solid 1px $c-white;
+
+	.cu-block__title {
+		position: absolute;
+		z-index: 2;
+		left: 0;
+		bottom: 0;
+		min-width: 80%;
+		background-color: transparentize($c-white, 0.3);
+		font-size: $font-size-basemax;
+		font-weight: bold;
+		text-transform: uppercase;
+		line-height: $line-height-min;
+		padding: 1rem 1rem 0.5rem 1.5rem;
+
+		@include media-breakpoint-down(md) {
+			font-size: $font-size-base;
+		}
+
+	}
+
+	img {
+		z-index: 1;
+		width: 100%;
+		height: auto;
+	}
+
+}
+
+.cu-form {
+	background: transparentize($c-white, 0.85);
+	padding: 1.5rem 3rem;
+	margin-top: 6rem;
+	position: relative;
+	z-index: 2;
+
+	@include media-breakpoint-down(md) {
+		padding: 1.5rem;
+		margin-top: 1.5rem;
+	}
+
+	@include media-breakpoint-down(xs) {
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+
+	.form-group {
+		margin-top: 1rem;
+	}
+
+	button {
+		font-weight: bold;
+		font-size: $font-size-basemin;
+		text-transform: uppercase;
+		padding: 1.1rem 3rem 0.7rem 3rem;
+
+		@include media-breakpoint-down(md) {
+			float: right;
+			width: 100%;
+		}
+
+	}
+
+	label.note {
+		margin-top: 1.5rem;
+	}
+
+	input[type="checkbox"] {
+		float: left;
+		margin-right: 1.5rem;
+		margin-top: -1rem;
+		margin-bottom: 1rem;
+	}
+
+}
+
+ul.cu-list {
+	list-style: none;
+	padding-left: 1.7rem;
+
+	> li {
+
+		&:before {
+			content: '— ';
+			font-weight: bold;
+			color: $c-blue;
+			margin-left: -1.7rem;
+		}
+
+	}
+}
+
+
+.sc_custom-collage {
+	background: #dad3c1 url("../img/cu_cl1.jpg") 50% top no-repeat;
+	height: 57rem;
+
+	@include media-breakpoint-down(md) {
+		background-size: cover;
+		background-position: 10% top;
+		background-color: $c-white;
+		height: 28rem;
+	}
+
+	.cu-collage__title {
+		position: absolute;
+		z-index: 2;
+		top: 15%;
+		font-size: 3.3rem;
+		text-transform: uppercase;
+		color: $c-gray;
+		line-height: $line-height-min;
+
+		@include media-breakpoint-down(md) {
+			top: 10%;
+			font-size: 2.1rem;
+		}
+
+	}
+
+	.cu-collage__btn {
+		position: absolute;
+		bottom: 15%;
+		width: 26rem;
+	}
+
+}
+
+
+
+.sc_custom-pin {
+	margin-top: 3rem;
+	margin-bottom: 1.5rem;
+
+	.cu-pin {
+		text-align: center;
+		margin-bottom: 3rem;
+
+		img {
+			height: 120px;
+			width: auto;
+			margin-bottom: 2.5rem;
+		}
+
+		.cu-pin__title {
+			text-transform: uppercase;
+			line-height: $line-height-min;
+			color: $c-gray;
+			font-size: $font-size-basemax;
+			font-weight: bold;
+		}
+
+		p {
+			color: $c-gray-light;
+		}
+
+	}
+
+}
+
+
+
+.sc_custom-youtubes {
+	padding-top: 0;
+	padding-bottom: 3rem;
+
+	.cu-youtubes__video {
+		margin-bottom: 3rem;
+
+		@include media-breakpoint-down(sm) {
+			margin-bottom: 1.5rem;
+		}
+
+	}
+
+}
+
+
+
+.sc_custom-var {
+
+	.cu-var {
+		position: relative;
+		padding-bottom: 3rem;
+		margin-bottom: 1.5rem;
+
+		img {
+			margin-bottom: 1.5rem;
+		}
+
+		.cu-var__title {
+			text-transform: uppercase;
+			line-height: $line-height-min;
+			color: $c-gray;
+			font-size: $font-size-basemax;
+			font-weight: bold;
+		}
+
+		p {
+			color: $c-gray-light;
+		}
+
+	}
+
+	.cu-var__tocalc {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		display: flex;
+		justify-content: space-between;
+
+		@include media-breakpoint-down(md) {
+			justify-content: start;
+		}
+
+	}
+
+	.tocalc_btn {
+		border: none;
+		padding: 0.7rem 0.8rem 0.5rem 0.8rem;
+		background: $color-link;
+		color: $c-white;
+		font-size: $font-size-basemin;
+		border-radius: $border-radius;
+		white-space: nowrap;
+		margin-top: -0.6rem;
+		margin-left: 1.5rem;
+
+		&:hover {
+			background: $color-link-hover;
+		}
+
+		i {
+			margin-right: 0.8rem;
+		}
+
+	}
+
+}
+
+
+
+.sc_custom-catalog {
+	background: $c-gray url("../img/cu_bk1.png") bottom center no-repeat;
+	min-height: 70rem;
+	padding-bottom: 0;
+	color: $c-gray-lightermore;
+	overflow: hidden;
+
+	a {
+		color: $c-white;
+	}
+
+	.note {
+		color: $c-gray-lightermore;
+	}
+
+	.cu-mainhdr {
+		color: $c-white;
+		max-width: 70%;
+
+		@include media-breakpoint-down(xs) {
+			max-width: 100%;
+		}
+
+	}
+
+	.cu-catalogpic {
+		position: absolute;
+		z-index: 0;
+		top: 6.5rem;
+		right: 2rem;
+		width: 60%;
+		max-width: 850px;
+		height: 100%;
+		background: url("../img/cu_catalogue.png") no-repeat;
+		background-size: contain;
+
+		@include media-breakpoint-down(md) {
+			top: 3rem;
+			right: -10rem;
+		}
+
+		@include media-breakpoint-down(xs) {
+			width: 100%;
+			top: 12rem;
+			right: -1rem;
+		}
+
+	}
+
+	.cu-catalog {
+		max-width: 40%;
+
+		@include media-breakpoint-down(md) {
+			max-width: 60%;
+		}
+
+		@include media-breakpoint-down(xs) {
+			margin-top: 80%;
+			max-width: 100%;
+		}
+
+		.cu-catalog__title {
+			font-weight: bold;
+			font-size: $font-size-basemax;
+		}
+
+		.cu-catalog__ul {
+			list-style: none;
+
+			> li {
+				margin: 2rem 0 2rem 2rem;
+				position: relative;
+				display: block;
+				line-height: $line-height-p;
+
+				i {
+					float: left;
+					font-size: 2.1rem;
+					color: #707d8f;
+					margin-right: 1.5rem;
+					margin-left: -4rem;
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+
+.sc_custom-glass {
+	padding-bottom: 0;
+
+	.custom-glass_type {
+		margin: 3rem 0 1.5rem 0;
+	}
+
+	.custom-glass_note {
+		margin-bottom: 4rem;
+
+		.cu-glass_note__videotxt {
+			background: $c-white;
+			font-size: $font-size-basemin;
+			font-weight: bold;
+			text-align: center;
+			padding: 1rem;
+		}
+
+	}
+
+	.custom-glass_protect {
+		margin: 3rem 0 1.5rem 0;
+
+		.cu-img {
+			border: solid 4px $c-white;
+			margin-top: 1rem;
+			margin-bottom: 1.5rem;
+		}
+
+		.cu-glass_protect__txt {
+			margin: 1rem 0 0 -15px;
+
+			@include media-breakpoint-down(md) {
+				margin: 0;
+			}
+
+		}
+
+	}
+
+	.custom-glass_images {
+		margin: 1.5rem 0 1.5rem 0;
+
+		.slider {
+			margin-left: 0;
+			margin-right: 0 !important;
+
+			.slick-list {
+				margin-right: 30px;
+
+				@include media-breakpoint-down(md) {
+					margin-right: 0;
+				}
+
+			}
+
+			.slick-track {
+				padding-top: 4rem;
+
+				@include media-breakpoint-down(sm) {
+					padding-top: 2rem;
+				}
+
+			}
+
+			.slick-dots {
+				padding-right: 30px;
+
+				@include media-breakpoint-down(md) {
+					padding-right: 0;
+				}
+
+			}
+
+			.slick-slide {
+				margin-right: -2px;
+				margin-left: -2px;
+			}
+
+			.slick-current {
+				height: 44rem !important;
+				overflow: hidden;
+				margin-top: -4rem;
+
+				@include media-breakpoint-down(sm) {
+					height: 34rem !important;
+					margin-top: -2rem;
+				}
+
+			}
+
+		}
+
+		.cu-glass_images__item {
+			height: 36rem;
+
+			@include media-breakpoint-down(sm) {
+				height: 30rem;
+			}
+
+			img {
+				height: 100%;
+				border: solid 4px $c-white;
+			}
+
+		}
+
+		.cu-glass_txt {
+			margin-top: 4rem;
+
+			@include media-breakpoint-down(sm){
+				margin-top: 2rem;
+			}
+
+		}
+
+	}
+
+	.custom-glass_form {
+		background-color: #dddddd;
+
+		a {
+			color: $c-gray;
+
+			&:hover {
+				color: $color-link-hover;
+			}
+
+		}
+
+	}
+
+}
+
+
+
+.sc_custom-profur {
+
+	.cu-profur__img {
+		margin-top: 1.5rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.cu-profur__txt {
+		margin-top: 0;
+		margin-bottom: 1.5rem;
+	}
+
+	.cu-profur__isp {
+		margin-top: 2rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.cu-profur__paint {
+		margin-top: 0;
+		margin-bottom: 1.5rem;
+		padding: 2rem 1.5rem;
+		background: $c-white url("../img/cu_bkpaint.jpg") right bottom no-repeat;
+		min-height: 38.5rem;
+
+		p {
+			width: 75%;
+		}
+
+	}
+
+	.cu-profur__isp_images {
+		margin-top: 1rem;
+	}
+
+}
+
+
+
+.sc_custom-meas {
+	background: #292929 url("../img/cu_bk2.png") bottom center no-repeat;
+	padding-bottom: 0;
+	color: $c-gray-lightermore;
+	overflow: hidden;
+
+	a {
+		color: $c-white;
+	}
+
+	.note {
+		color: $c-gray-lightermore;
+	}
+
+	.cu-mainhdr {
+		color: $c-white;
+		max-width: 70%;
+
+		@include media-breakpoint-down(xs) {
+			max-width: 100%;
+		}
+
+	}
+
+	.cu-measpic {
+		position: absolute;
+		z-index: 0;
+		top: 5rem;
+		right: 15%;
+		width: 100%;
+		max-width: 475px;
+		height: 100%;
+		background: url("../img/cu_box.png") no-repeat;
+		background-size: contain;
+
+		@include media-breakpoint-down(md) {
+			top: 3rem;
+			right: -10rem;
+			width: 60%;
+		}
+
+		@include media-breakpoint-down(xs) {
+			width: 50%;
+			top: 10rem;
+			right: 25%
+		}
+
+	}
+
+	.cu-meas {
+		margin-bottom: 22rem;
+		max-width: 40%;
+
+		@include media-breakpoint-down(md) {
+			margin-bottom: 10rem;
+			max-width: 60%;
+		}
+
+		@include media-breakpoint-down(xs) {
+			margin-top: 60%;
+			max-width: 100%;
+			margin-bottom: 3rem;
+		}
+
+	}
+
+}
+
+
+
+.sc_custom-work {
+
+	.slider {
+
+		.slick-list {
+			margin-right: 30px;
+
+			@include media-breakpoint-down(sm) {
+				margin-right: 0;
+			}
+
+		}
+
+		.slick-track {
+			padding-top: 4rem;
+
+			@include media-breakpoint-down(sm) {
+				padding-top: 2rem;
+			}
+
+		}
+
+		.slick-dots {
+			padding-right: 30px;
+
+			@include media-breakpoint-down(sm) {
+				padding-right: 0;
+			}
+
+		}
+
+		.slick-slide {
+			margin-right: 5px;
+			margin-left: 5px;
+		}
+
+		.slick-current {
+			height: 48rem !important;
+			overflow: hidden;
+			margin-top: -4rem;
+
+			@include media-breakpoint-down(sm) {
+				height: 34rem !important;
+				margin-top: -2rem;
+			}
+
+		}
+
+	}
+
+	.cu-work_images {
+		margin-bottom: 3rem;
+	}
+
+	.cu-work_images__item {
+		height: 40rem;
+
+		@include media-breakpoint-down(sm) {
+			height: 30rem;
+		}
+
+		img {
+			height: 100%;
+		}
+
+	}
+
+}
+
+
+
+.sc_custom-faq {
+	background: url("../img/cu_bkq.svg") 80% bottom no-repeat;
+
+	@include media-breakpoint-down(md) {
+		background-position: right bottom;
+	}
+
+
+	.cu-faq {
+
+		.block-accordion {
+			margin-bottom: 3rem;
+		}
+
+		i {
+			position: relative;
+			font-size: 2.1rem;
+			margin-right: 0.9rem;
+			top: 0.2rem;
+			color: $c-gray;
+		}
+
+		.acc__header {
+			text-transform: uppercase;
+			cursor: pointer;
+			font-weight: bold;
+
+			p {
+				line-height: $line-height-def;
+			}
+
+			&:hover {
+				color: $c-blue;
+			}
+
+			&.collapsed {
+				font-weight: normal;
+
+				i {
+					color: $c-blue;
+				}
+
+			}
+
+		}
+
+		.acc__plate {
+			margin-top: -1.2rem;
+			margin-left: 1rem;
+			color: $c-black;
+			border-left: solid 1px $c-gray-light;
+			padding-left: 2.1rem;
+			padding-top: 1.2rem;
+		}
+
+	}
+
+}
+
+
+
+.sc_custom-quest {
+	background: #dad3c1 url("../img/cu_bkord.jpg") 50% top no-repeat;
+	height: 33rem;
+
+	@include media-breakpoint-down(md) {
+		background-size: cover;
+		background-position: 50% top;
+		height: 25rem;
+	}
+
+	@include media-breakpoint-down(xs) {
+		background-position: 55% top;
+	}
+
+	.cu-quest__title {
+		position: absolute;
+		z-index: 2;
+		top: 15%;
+		font-size: 3.3rem;
+		text-transform: uppercase;
+		color: $c-gray;
+		line-height: $line-height-min;
+
+		@include media-breakpoint-down(xs) {
+			font-size: 2.5rem;
+		}
+
+	}
+
+	.cu-quest__btn {
+		position: absolute;
+		bottom: 15%;
+		width: 26rem;
+	}
+
+}
+
+
+
+
+
+.collage--showerenclosures {
+	background: #dad3c1 url("../img/showerenclosures/cu_cl1.jpg") 50% top no-repeat;
+
+	@include media-breakpoint-down(md) {
+		background-position: 35% 15%;
+	}
+
+}
+
+.catalog--showerenclosure {
+
+	.cu-catalogpic {
+		background: url("../img/showerenclosures/cu_catalogue1.png") no-repeat;
+	}
+
+}
+
+
+
+.collage--doorsshower {
+	background: #dad3c1 url("../img/doorsshower/cu_cl2.jpg") 50% top no-repeat;
+
+	@include media-breakpoint-down(md) {
+		background-position: 45% 50%;
+	}
+
+}
+
+.catalog--doorsshower {
+
+	.cu-catalogpic {
+		background: url("../img/doorsshower/cu_catalogue2.png") no-repeat;
+	}
+
+}
+
+
+.collage--bathcurtains {
+	background: #dad3c1 url("../img/bathcurtains/cu_cl3.jpg") 50% top no-repeat;
+
+	@include media-breakpoint-down(md) {
+		background-position: 75% 10%;
+	}
+
+}
+
+.catalog--bathcurtains {
+
+	.cu-catalogpic {
+		background: url("../img/bathcurtains/cu_catalogue3.png") no-repeat;
+	}
+
+}
+
+
+
+.collage--showerpartitions {
+	background: #dad3c1 url("../img/showerpartitions/cu_cl4.jpg") 50% top no-repeat;
+
+	@include media-breakpoint-down(md) {
+		background-position: 53% 15%;
+	}
+
+}
+
+.catalog--showerpartitions {
+
+	.cu-catalogpic {
+		background: url("../img/showerpartitions/cu_catalogue4.png") no-repeat;
+	}
+
+}
+
+
+
+
+
+
+
+

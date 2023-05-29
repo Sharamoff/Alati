@@ -1,0 +1,202 @@
+.bar-bottom {
+	position: fixed;
+	z-index: 9999;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 35px;
+	background-color: $c-blue;
+	font-size: $font-size-basemin;
+	color: $c-white;
+	padding: 0 15px;
+
+	a {
+		display: inline-block;
+		color: $c-blue-light;
+		text-decoration: none;
+
+		&:hover {
+			color: $c-white;
+		}
+
+	}
+
+	@include media-breakpoint-down(md) {
+		//position: static;
+		padding: 0;
+	}
+
+	.container-fluid {
+		max-width: $m-max;
+	}
+
+}
+
+.bar-bottom-l {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	align-content: center;
+
+	@include media-breakpoint-down(xs) {
+		margin-left: -10px;
+		margin-right: -30px;
+	}
+
+}
+
+.bar-bottom-l__phone {
+	display: inline-block;
+	font-size: 21px;
+	color: $c-white !important;
+	white-space: nowrap;
+	margin-top: 4px;
+
+	@include media-breakpoint-down(sm) {
+		font-size: 14px;
+		margin-right: 10px;
+	}
+
+}
+
+.bar-bottom-l__call {
+	width: 23px;
+	height: 23px;
+	line-height: 23px;
+	background: $c-blue;
+	border: solid 1px $c-blue-light;
+	border-radius: 50%;
+	margin: 0 15px 0 5px;
+	font-size: 14px;
+	color: $c-blue-light;
+	padding: 0 !important;
+
+	@include media-breakpoint-down(sm) {
+		display: none;
+	}
+
+	&:hover {
+		color: $c-white;
+		border-color: $c-white;
+	}
+
+}
+
+.bar-bottom-l__socicons {
+	height: 35px;
+	border-left: solid 1px transparentize($c-blue-light, 0.5);
+	padding-top: 6px;
+	padding-left: 5px;
+
+	a {
+		display: inline-block;
+		font-size: 2.3rem;
+		margin-left: 1rem;
+
+		@include media-breakpoint-down(sm) {
+			font-size: 2.1rem;
+			margin-left: 0.7rem;
+		}
+
+	}
+
+}
+
+
+.bar-bottom-r {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+
+	@include media-breakpoint-down(xs) {
+		margin-right: -15px;
+	}
+
+}
+
+.bar-bottom-r__watched,
+.bar-bottom-r__fav,
+.bar-bottom-r__compare,
+.bar-bottom-r__cart {
+	display: inline-block;
+	height: 35px;
+	line-height: 35px;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: $c-blue-light;
+	border-left: solid 1px transparentize($c-blue-light, 0.5);
+
+	@include media-breakpoint-down(xs) {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	i {
+		font-size: 14px;
+	}
+
+	span {
+		margin-left: 0.8rem;
+
+		@include media-breakpoint-down(md) {
+			display: none;
+		}
+
+	}
+
+	.val {
+		color: $c-white;
+		margin-left: 0.5rem;
+	}
+
+}
+
+.bar-bottom-r__cart {
+	padding-right: 0;
+
+	@include media-breakpoint-down(md) {
+		display: none !important;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,209 @@
+#id_cataloguemenu {
+
+	&.show{
+		padding-right: 0 !important;
+		padding-left: 0 !important;
+	}
+
+	.modal-dialog {
+		min-width: 100%;
+		margin-top: 180px;
+
+		@include media-breakpoint-down(md) {
+			margin-top: 0;
+		}
+
+		@include media-breakpoint-only(xs) {
+			margin: 0;
+		}
+
+	}
+
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 1.5rem 0;
+
+		> li {
+			margin: 1rem 0;
+			line-height: $line-height-min;
+		}
+
+	}
+
+	a {
+		text-decoration: none;
+		color: $c-gray;
+
+		&:hover {
+			color: $color-link-hover;
+		}
+
+	}
+
+}
+
+.cataloguemenu-catalogue {
+	font-size: $font-size-base;
+	padding-bottom: 1rem;
+
+	.catalogue__hdr {
+		font-weight: bold;
+		text-transform: uppercase;
+		display: flex;
+		align-items: center;
+		position: relative;
+		top: 0.5rem;
+
+		img {
+			width: 40px;
+			height: 40px;
+			margin-right: 8px;
+		}
+
+	}
+
+	.catalogue__item {
+		padding-left: 48px;
+	}
+
+}
+
+.cataloguemenu-info {
+	background: $color-plate-dark;
+	padding: 1.5rem 1.5rem 1.5rem 8rem;
+
+	@include media-breakpoint-up(lg) {
+		display: none;
+	}
+
+	@include media-breakpoint-only(xs) {
+		padding-left: 3rem;
+	}
+
+	.info__worktime {
+		font-size: $font-size-basemin;
+		color: $c-gray-light;
+
+		span {
+			color: $c-black;
+		}
+
+	}
+
+	.info__phone {
+		display: inline-block;
+		white-space: nowrap;
+		color: $c-gray;
+		font-size: 1.6rem;
+
+		span {
+			font-size: 2.24rem;
+		}
+
+	}
+
+	.info__region {
+		display: inline-block;
+		padding: 3px 6px 2px 6px;
+		background: $c-white;
+		border-radius: $border-radius;
+		text-decoration: none;
+		margin-bottom: 1.5rem;
+		margin-left: -2px;
+
+		i {
+			position: relative;
+			color: $c-gray-lightermore;
+			margin-right: 0.5rem;
+		}
+
+	}
+
+}
+
+.cataloguemenu-mainmenu {
+	font-size: $font-size-base;
+	border-top: solid 1px $color-border;
+	padding: 1.5rem 1.5rem 1.5rem 8rem;
+
+	@include media-breakpoint-up(lg) {
+		display: none;
+	}
+
+}
+
+.cataloguemenu-fm_search {
+	padding: 3rem 1.5rem 3rem 8rem;
+	border-top: solid 1px $color-border;
+
+	@include media-breakpoint-up(lg) {
+		display: none;
+	}
+
+	@include media-breakpoint-only(xs) {
+		padding-left: 3rem;
+	}
+
+	input[type="search"] {
+		border-color: #bbbbbb;
+		border-radius: 0;
+		font-size: $font-size-basemin !important;
+		background: url("../img/i-lupa-s.svg") right no-repeat;
+		padding: 6px 25px 6px 10px !important;
+		height: 30px !important;
+		line-height: 30px !important;
+
+		@include media-breakpoint-up(sm) {
+			width: 60%;
+		}
+
+	}
+
+}
+
+.cataloguemenu-cabcart {
+	padding: 1.5rem 1.5rem 1.5rem 4rem;
+	border-top: solid 1px $color-border;
+
+	@include media-breakpoint-up(lg) {
+		display: none;
+	}
+
+	li {
+		margin-top: 1.5rem !important;
+		margin-bottom: 1.5rem !important;
+	}
+
+	i {
+		display: inline-block;
+		width: 4rem;
+		text-align: center;
+		color: $c-gray-lightermore;
+		font-size: $font-size-basemin;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

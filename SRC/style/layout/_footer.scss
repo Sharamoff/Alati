@@ -1,0 +1,201 @@
+.footer {
+	position: relative;
+	min-height: 33rem;
+	background-color: $color-bk-footer;
+	font-size: $font-size-basemin;
+	color: $c-gray-light;
+	padding: 3rem 15px 5rem 15px;
+
+	@include media-breakpoint-down(md) {
+		padding: 3rem 15px 3rem 15px;
+	}
+
+	.container-fluid {
+		max-width: $m-max;
+	}
+
+	a {
+		color: $c-black;
+		text-decoration: none;
+
+		&:hover {
+			color: $color-link-hover;
+		}
+
+	}
+
+}
+
+.footer-region {
+	display: inline-block;
+	padding: 4px 6px 3px 6px;
+	background: $c-white;
+	border-radius: $border-radius;
+	text-decoration: none;
+	margin-bottom: 0.5rem;
+
+	i {
+		position: relative;
+		color: $c-gray-lightermore;
+		margin-right: 0.5rem;
+	}
+
+}
+
+.footer-menu {
+	padding: 0;
+	margin-top: 0;
+	margin-bottom: 3rem;
+
+	@include media-breakpoint-down(md) {
+		margin-bottom: 1.5rem;
+	}
+
+	> li {
+		list-style: none;
+		margin-top: 0.8rem;
+		margin-bottom: 0.8rem;
+	}
+
+	.hdr {
+		margin-top: 0.5rem;
+		margin-bottom: 1.2rem;
+		font-size: $font-size-base;
+		font-weight: bold;
+		color: $c-gray;
+		text-transform: uppercase;
+	}
+
+}
+
+.footer-fm_searchcode {
+	margin-bottom: 3.2rem;
+
+	@include media-breakpoint-down(md) {
+		margin-bottom: 1.5rem;
+	}
+
+
+	input[type="search"] {
+		border-color: #bbbbbb;
+		border-radius: 0;
+		font-size: $font-size-basemin !important;
+		background: $color-plate url("../img/i-lupa-s.svg") right no-repeat;
+		padding: 0 20px 0 8px !important;
+		height: 30px !important;
+		line-height: 30px !important;
+		margin-top: -2px;
+		margin-left: -9px;
+		max-width: 290px;
+	}
+
+}
+
+.footer-logo {
+	display: inline-block;
+	margin-top: -2px;
+	margin-bottom: 0.9rem;
+
+	@include media-breakpoint-down(sm) {
+		margin-top: 1.5rem;
+	}
+
+}
+
+.footer-copy {
+
+}
+
+.footer-contact {
+	margin-top: 1.2rem;
+}
+
+.footer-email {
+	display: inline-block;
+	margin-top: 0.3rem;
+	margin-bottom: 0.3em;
+	margin-right: 1.5rem;
+	white-space: nowrap;
+
+	&:before {
+		font-family: $fontawesome;
+		content: '\f0e0';
+		color: $c-gray-lighter;
+		margin-right: 0.5rem;
+	}
+
+}
+
+.footer-phone {
+	display: inline-block;
+	margin-top: 0.3rem;
+	margin-bottom: 0.3rem;
+	white-space: nowrap;
+
+	&:before {
+		font-family: $fontawesome;
+		content: '\f095';
+		color: $c-gray-lighter;
+		margin-right: 0.5rem;
+	}
+
+}
+
+.footer-soc {
+	margin-top: 1.5rem;
+
+	a {
+		display: inline-block;
+		font-size: 2.5rem;
+		margin-right: 1.5rem;
+		margin-bottom: 1rem;
+		color: $c-gray-light;
+
+		&:hover {
+			color: $color-link-hover;
+		}
+
+	}
+
+}
+
+.footer-promoting {
+	display: inline-block;
+	margin-top: 1.7rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

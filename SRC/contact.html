@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+	<title>Alati</title>
+
+	<link href="css/vendor.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/addit.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+
+
+//= layout/_bar-top.html
+
+
+
+
+
+//= layout/_header.html
+
+
+
+
+
+//= layout/_cataloguemenu.html
+
+
+
+
+
+<section class="pagecontent sc_pagehead">
+<div class="container-fluid">
+
+	<nav aria-label="breadcrumb">
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="index.html"><img src="img/home.png" width="16" height="16" alt="На главную" title="На главную"></a></li>
+			<li class="breadcrumb-item active" aria-current="page">Контактная информация</li>
+		</ol>
+	</nav>
+
+	<h1>Контактная информация</h1>
+
+</div>
+</section>
+
+
+
+
+
+<section class="pagecontent sc_page sc--gray sc--topborder">
+<div class="container-fluid">
+
+	<div class="block-contact">
+		<div class="row row--stretched row--margined">
+
+			<div class="col-sm-6">
+				<div class="contact__address panel panel--white">
+					<p class="hdr">Адрес магазина</p>
+					<p>Московская область, Ленинский р-н, с. Беседы, Промышленный пр. 9, Индустриальный парк "РЕАЛ"</p>
+					<p><span>Телефон:</span><br>
+						<a href="tel:+74956462566">+7 495 646-25-66</a> (телефон в Москве)<br>
+						<a href="tel:88004442566" style="margin-left:0.7rem;">8 800 444-25-66</a> (бесплатный звонок по России)</p>
+					<p><span>Мобильный для экстренной связи:</span><br>
+						<a href="tel:+79261920231">+7 926 192-02-31</a> (WhatsApp, Viber)</p>
+					<p><span>Email:</span> <a href="mailto:info@alati.ru">info@alati.ru</a></p>
+					<p><span>Часы работы магазина:</span><br>
+						Пн-Пт с 10:00 до 22:00</p>
+				</div>
+			</div>
+
+			<div class="col-sm-6">
+				<div class="contact__req panel panel--white">
+					<p class="hdr">Реквизиты</p>
+					<p>ИП Пириев Азиз Джамалович</p>
+					<p>ИНН 772409694387 / ОГРНИП 316332800073921</p>
+					<p><span>Юридический адрес:</span><br>
+						601413, Владимирская область, р-н Вязниковский, д.Осинки, ул.Молодежная, д.20, кв.2</p>
+					<p>р/с 40802810138000031961 в ПАО Сбербанк<br>
+						к/с 30101810400000000225</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+</section>
+
+
+
+
+
+<section class="sc_map">
+	<div class="ymap" id="id_ymap"></div>
+</section>
+
+
+
+
+
+//= layout/_footer.html
+
+
+
+
+
+//= layout/_bar-bottom.html
+
+
+
+
+
+//= layout/_modal-delivery.html
+
+
+
+
+
+//= layout/_modal.html
+
+
+
+
+
+<script src="js/vendor.js"></script>
+<script src="js/main.js"></script>
+
+
+
+
+
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script type="text/javascript">
+	$(document).ready(function () {
+
+		ymaps.ready(init);
+
+		function init(){
+
+			var myMap = new ymaps.Map ("id_ymap", {
+				center: [55.67231005211352,37.78386354893496],
+				zoom: 11
+			});
+
+			myPlacemark = new ymaps.Placemark([55.608300, 37.784552], {
+				hintContent: 'ООО «АЛАТИ»',
+				balloonContent: ''
+			}, {
+				preset: 'islands#dotIcon',
+				iconColor: '#0073cf'
+			});
+
+			myMap.geoObjects
+				.add(myPlacemark);
+
+			myMap.behaviors.disable('scrollZoom');
+
+		}
+
+	});
+</script>
+
+
+
+
+
+</body>
+</html>

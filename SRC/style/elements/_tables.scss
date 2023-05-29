@@ -1,0 +1,423 @@
+///////////////////////////////////////////////
+
+
+
+// таблицы
+
+
+.table {
+	margin: 1.5rem 0 3rem 0;
+	background: $color-bk-body;
+
+	th {
+		padding: 0.8rem 1rem;
+		background: $color-plate-dark;
+		line-height: $line-height-min;
+		font-size: $font-size-basemin;
+		color: $c-gray-light;
+		border-left: solid 1px $c-white;
+		text-align: center;
+		vertical-align: center !important;
+		font-weight: normal;
+
+		a {
+			text-decoration: none;
+			color: $c-gray-light;
+		}
+
+		&:first-child {
+			border-left: 0;
+		}
+
+	}
+
+	td {
+		padding: 1rem;
+		line-height: $line-height-def;
+		font-size: $font-size-base;
+		vertical-align: top;
+	}
+
+	@include media-breakpoint-down(xs) {
+		th,
+		td {
+			font-size: $font-size-basemin;
+			padding: 0.5rem !important;
+		}
+	}
+
+}
+
+
+
+.tabledesc {
+	margin-bottom: 1.5rem;
+
+	td {
+		padding: 0.5rem 1.5rem 0.5rem 0;
+		vertical-align: top;
+	}
+
+	.tdprop {
+		color: $c-gray-light;
+		white-space: nowrap;
+
+		a {
+			color: $c-gray-light;
+			text-decoration: none;
+			border-bottom: dotted 1px $c-gray-lighter;
+
+			&:hover {
+				color: $color-link-hover;
+				border-color: transparent;
+			}
+
+		}
+
+		i {
+			display: inline-block;
+			width: 1.5rem;
+			margin-right: 0.5rem;
+			color: $c-gray-lighter;
+			font-size: 12px;
+		}
+
+	}
+
+	.tditem {
+		color: $c-black;
+		white-space: nowrap;
+	}
+
+}
+
+
+
+.td--price {
+	text-align: right !important;
+	color: $c-black;
+	white-space: nowrap;
+}
+
+.td--cart {
+	padding: 0.5rem !important;
+	width: 1%;
+	flex-grow: 1;
+
+	button,
+	a {
+		display: inline-block;
+		border: none;
+		background: $c-white;
+		color: $color-link;
+		padding: 0.5rem 1rem;
+		margin: 0;
+
+		i {
+			font-size: 1.6rem;
+		}
+
+		&:hover {
+			color: $color-link-hover;
+		}
+
+	}
+
+}
+
+
+.th--up {
+	margin-right: -5px;
+
+	&:after {
+		font-family: $fontawesome;
+		font-weight: bold;
+		font-size: 14px;
+		color: $c-gray-lighter;
+		content: '\f0d8';
+		margin-left: 0.5rem;
+	}
+
+}
+
+.th--down {
+	margin-right: -5px;
+
+	&:after {
+		font-family: $fontawesome;
+		font-weight: bold;
+		font-size: 14px;
+		color: $c-gray-lighter;
+		content: '\f0d7';
+		margin-left: 0.5rem;
+	}
+
+}
+
+
+.td--left {text-align: left !important;}
+.td--centered {text-align: center !important;}
+.td--right {text-align: right !important;}
+
+
+
+
+
+
+// таблица на слоях
+
+.divtable {
+	margin: 1.5rem 0 3rem 0;
+	background: $c-white;
+	color: $c-gray;
+	border-top: solid 1px #dddddd;
+
+	.row {
+		display: flex;
+		flex-flow: row wrap;
+		border-bottom: solid 1px #dddddd;
+		margin-top: 0;
+		margin-left: 0;
+		margin-right: 0;
+
+		@include media-breakpoint-down(sm) {
+			display: block;
+			padding-top: 0.5rem;
+			padding-bottom: 0.5rem;
+		}
+
+		&.row--th {
+
+			@include media-breakpoint-down(sm) {
+				display: none;
+			}
+
+		}
+
+		&.row--td {
+
+		}
+
+	}
+
+	&.divtable--hovered {
+
+		.row--td:hover {
+			background-color: $color-plate;
+			cursor: pointer;
+		}
+
+	}
+
+
+	.dt-th {
+		padding: 0.8rem 1rem;
+		background: $color-plate-dark;
+		line-height: 1;
+		font-size: $font-size-basemin;
+		color: $c-gray-light;
+		border-left: solid 1px $c-white;
+		flex-grow: 2;
+		width: 15%;
+
+		a {
+			text-decoration: none;
+			color: $c-gray-light;
+		}
+
+		&:first-child {
+			border-left: 0;
+		}
+
+		&.th--name {
+			width: 33%;
+
+			@include media-breakpoint-down(sm) {
+				width: 100%;
+			}
+
+		}
+
+		&.th--price {
+			text-align: right;
+			width: 10%;
+		}
+
+		&.th--cart {
+			padding: 0 !important;
+			width: 3%;
+			flex-grow: 1;
+		}
+
+	}
+
+	.dt-td {
+		padding: 1rem;
+		line-height: 1;
+		font-size: $font-size-base;
+		flex-grow: 2;
+		width: 15%;
+
+		@include media-breakpoint-down(sm) {
+			display: block;
+			width: auto;
+			padding: 0 1rem;
+			line-height: $line-height-min;
+		}
+
+		.dt-tt {
+			display: none;
+
+			@include media-breakpoint-down(sm) {
+				display: block;
+				color: $c-gray-light;
+				font-size: $font-size-fixsm;
+				margin-top: 0.6rem;
+				margin-bottom: 0;
+			}
+
+		}
+
+		&.td--name {
+			width: 33%;
+			@include clearfix;
+
+			@include media-breakpoint-down(sm) {
+				width: 100%;
+				margin-bottom: 1rem;
+			}
+
+			.td--name__productimg {
+				width: 8rem;
+				float: left;
+				margin-right: 1rem;
+
+				img {
+					width: 100%;
+					height: auto;
+				}
+
+			}
+
+			.td--name__producttitle {
+
+			}
+
+			.td--name__productprice {
+				font-weight: bold;
+			}
+
+
+		}
+
+		&.td--price {
+			text-align: right;
+			white-space: nowrap;
+			width: 10%;
+
+			@include media-breakpoint-down(sm) {
+				text-align: left;
+			}
+
+		}
+
+		&.td--cart {
+			padding: 0.5rem !important;
+			width: 3%;
+			flex-grow: 1;
+
+			@include media-breakpoint-down(sm) {
+				padding-left: 1rem !important;
+				min-width: 40%;
+			}
+
+			button{
+				border: none;
+				width: 100%;
+				background: $c-white;
+				color: $color-link;
+				padding: 0.5rem 1rem;
+				margin: 0;
+				border-radius: $border-radius;
+
+				@include media-breakpoint-down(sm) {
+					background: $color-link;
+					color: $c-white;
+					padding: 0.6rem 1rem;
+				}
+
+				i {
+					font-size: 1.6rem;
+				}
+
+				&:hover {
+					color: $color-link-hover;
+
+					@include media-breakpoint-down(sm) {
+						background: $color-link-hover;
+						color: $c-white;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+.multiselect-native-select {
+
+	.multiselect_btn-group {
+		position: relative;
+		display: inline-flex;
+		vertical-align: middle;
+		width: 100%;
+	}
+
+	.multiselect_btn {
+		background: transparentize($c-white, 0.33) !important;
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+		color: $c-gray-lighter;
+		font-weight: normal;
+		font-size: $font-size-fixsm;
+		padding: 0.4rem 0.6rem 0.3rem 0.6rem;
+		margin-top: 0.4rem;
+		border-radius: 0;
+		border: none;
+		box-shadow: none;
+		text-align: left;
+	}
+
+	.multiselect-container {
+		background: $color-plate-dark;
+		font-size: $font-size-basemin;
+		border: none;
+		border-radius: 0;
+		min-width: 15rem;
+
+		li {
+			margin: 1rem 0.5rem !important;
+		}
+
+		label {
+			color: $color-text;
+			padding: 0;
+			white-space: nowrap;
+		}
+
+		input {
+			height: 1.4rem !important;
+			width: 1.4rem !important;
+			margin-right: 5px;
+			float: left;
+		}
+
+	}
+
+}
+

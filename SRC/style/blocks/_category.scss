@@ -1,0 +1,179 @@
+///////////////////////////////////////////////
+
+
+
+// популярные категории
+
+
+.block-popcategory {
+
+  .popcategory__item {
+
+    .hdr {
+      position: absolute;
+      bottom: 1.5rem;
+      left: 0;
+      width: 75%;
+      background: transparentize($c-white, 0.25);
+      color: $c-gray;
+      font-size: $font-size-hdr;
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: $line-height-min;
+      padding: 1.2rem 1.5rem 0.8rem 3rem;
+
+      @include media-breakpoint-down(md) {
+        padding-left: 1.5rem;
+        width: 90%;
+      }
+
+      @include media-breakpoint-only(sm) {
+        width: 100%;
+        bottom: 0;
+      }
+
+    }
+
+    img {
+      width: 100%;
+      height :auto;
+      border: solid 1px transparentize($c-white, 0.5);
+    }
+
+    &:hover {
+
+      .hdr {
+        color: $c-black;
+        background: $c-white;
+      }
+
+      img {
+        border-color: $c-white;
+      }
+
+    }
+
+  }
+
+}
+
+
+// категории в фильтре
+
+.block-fltcategory {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 1rem 0 2rem 0;
+
+  @include media-breakpoint-down(md) {
+    flex-wrap: wrap;
+  }
+
+
+  .fltcategory__item {
+    display: inline-block;
+    position: relative;
+    max-width: 18rem;
+    height: auto;
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+
+    .ttl {
+      position: absolute;
+      bottom: 1rem;
+      left: 0;
+      width: 95%;
+      z-index: 2;
+      background: transparentize($c-white, 0.33);
+      font-size: $font-size-basemin;
+      color: $c-gray;
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: $line-height-min;
+      padding: 0.8rem 0.5rem 0.5rem 1.5rem;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    &:hover {
+
+      .ttl {
+        color: $c-black;
+        background: $c-white;
+      }
+
+    }
+
+  }
+
+}
+
+
+// категории в фильтре корневом (переделки картинок)
+
+.block-fltcategory-root {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0;
+  height: 100%;
+
+  .fltcategory__item {
+    display: block;
+    position: relative;
+    flex: 1 1 10rem;
+    max-width: 22rem;
+    max-height: 22rem;
+    overflow: hidden;
+    object-fit: cover;
+    border: solid 1px $c-white;
+    margin-left: -1px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    .ttl {
+      position: absolute;
+      bottom: 1rem;
+      left: 0;
+      width: 95%;
+      z-index: 2;
+      background: transparentize($c-white, 0.33);
+      font-size: $font-size-basemin;
+      color: $c-gray;
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: $line-height-min;
+      padding: 0.8rem 0.5rem 0.5rem 1.5rem;
+    }
+
+    img {
+      height: 100%;
+      width: auto;
+      object-fit: cover;
+    }
+
+    &:hover {
+
+      .ttl {
+        color: $c-black;
+        background: $c-white;
+      }
+
+    }
+
+  }
+
+}
+
+
+
+
+
+
+
+

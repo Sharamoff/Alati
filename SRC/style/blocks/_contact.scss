@@ -1,0 +1,63 @@
+///////////////////////////////////////////////
+
+
+
+// контакты
+
+
+.block-contact {
+  margin-bottom: 3rem;
+
+  p {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: $c-black;
+  }
+
+  .hdr {
+    font-weight: bold;
+    font-size: $font-size-basemax;
+  }
+
+  span {
+    color: $c-gray-light;
+  }
+
+}
+
+
+.sc_map {
+  margin: 0 !important;
+  padding: 0 !important;
+
+  .ymap {
+    height: 50rem;
+    background-color: $c-white;
+    border-top: solid 1px $color-border;
+  }
+
+}
+
+.sc_map000 {
+  margin: 20px auto !important;
+  padding: 0 !important;
+
+  .ymap000 {
+    width: 100%;
+    height: 700px;
+    margin: 0 auto;
+  }
+
+  .ymaps-layers-pane {
+    filter: contrast(120%);
+    filter: grayscale(88%);
+  }
+
+}
+
+
+
+
+
+
+

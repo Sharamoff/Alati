@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'OpenSansLight';
+  src: url('../fonts/opensans-light.eot');
+  src: url('../fonts/opensans-light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/opensans-light.woff') format('woff'),
+  url('../fonts/opensans-light.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family:'PTSans';
+  src: url('../fonts/pts55f.eot');
+  src: url('../fonts/pts55f.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/pts55f.woff') format('woff'),
+  url('../fonts/pts55f.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:'PTSans';
+  src: url('../fonts/pts56f.eot');
+  src: url('../fonts/pts56f.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/pts56f.woff') format('woff'),
+  url('../fonts/pts56f.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family:'PTSans';
+  src: url('../fonts/pts75f.eot');
+  src: url('../fonts/pts75f.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/pts75f.woff') format('woff'),
+  url('../fonts/pts75f.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:'PTSans';
+  src: url('../fonts/pts76f.eot');
+  src: url('../fonts/pts76f.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/pts76f.woff') format('woff'),
+  url('../fonts/pts76f.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}

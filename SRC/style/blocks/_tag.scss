@@ -1,0 +1,74 @@
+///////////////////////////////////////////////
+
+
+
+// тэги
+
+
+.block-tagscloud {
+  margin-bottom: 3rem;
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: $font-size-basemin;
+
+  > li {
+    padding: 0;
+    margin: 0.25rem;
+
+    a {
+      display: inline-block;
+      padding: 0.4rem 0.8rem;
+      text-decoration: none;
+      color: $c-gray-lighter;
+      background: $color-plate-dark;
+      border: solid 1px $c-gray-lightermore;
+      white-space: nowrap;
+
+      &:hover {
+        color: $color-link-hover;
+        background: $color-border;
+      }
+
+      &.active {
+        background: $c-white;
+        color: $c-gray;
+      }
+
+    }
+
+  }
+
+}
+
+
+
+.block-tagscol {
+  padding-left: 1.5rem;
+  list-style: circle;
+  font-size: $font-size-basemin;
+
+  > li {
+    padding: 0;
+    margin: 0.8rem 0;
+
+    a {
+      display: inline-block;
+      text-decoration: none;
+      color: $c-gray-lighter;
+      white-space: nowrap;
+
+      &:hover {
+        color: $color-link-hover;
+      }
+
+      &.active {
+        color: $c-gray;
+      }
+
+    }
+
+  }
+
+}

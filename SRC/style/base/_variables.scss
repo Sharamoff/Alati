@@ -1,0 +1,75 @@
+// media
+
+$m-min:									290px;
+$m-max:									1170px;
+
+$blockpic-max:					290px;
+$cu-blockpic-max:				262px;
+
+
+// colors
+
+$c-white:               rgb(255, 255, 255);
+$c-black:               rgb(0, 0, 0);
+
+$c-gray-lightermore:		#bbbbbb;
+$c-gray-lighter:				#999999;
+$c-gray-light:					#666666;
+$c-gray:								#333333;
+$c-blue-light:					#a3c1e8;
+$c-blue: 								#0073cf;
+$c-blue-dark:						#31649b;
+$c-orange: 							#ff6000;
+
+$color-bk-body:         $c-white;
+$color-bk-header:       $c-white;
+$color-bk-footer:       #dddddd;
+
+
+$color-text:            $c-gray;
+$color-link:            $c-blue;
+$color-link-hover:      $c-orange;
+$color-h:      			  	$c-black;
+$color-hdr:      			  $c-black;
+$color-note:						$c-gray-light;
+$color-placeholder:     $c-gray-lightermore;
+$color-border:					#dddddd;
+$color-border-gray:			#cccccc;
+$color-border-hover:		#bbbbbb;
+$color-plate:           #f3f3f3;
+$color-plate-dark:      #e9e9e9;
+
+
+
+// fonts
+
+$fontawesome:						'Font Awesome 5 Pro';
+$font-family-caption:   PTSans, Arial, Helvetica, sans-serif;
+$font-family-base:      PTSans, Arial, Helvetica, sans-serif;
+$font-family-light:     OpenSansLight, Arial, Helvetica, sans-serif;
+
+$f-size-base-xl:        10px;
+$f-size-base-lg:        10px;
+$f-size-base-md:        10px;
+$f-size-base-sm:        10px;
+$f-size-base-xs:        10px;
+
+$font-size-base:        1.6rem;
+$font-size-basemin:     1.4rem;
+$font-size-basemax:     1.8rem;
+$font-size-text:				$font-size-base;
+$font-size-note:				$font-size-basemin;
+$font-size-h1:          2.24rem;
+$font-size-h2:          2.1rem;
+$font-size-h3:          1.8rem;
+$font-size-hdr:         1.6rem;
+$font-size-fixsm:				12px;
+
+$line-height-p:   	    1.428571429;
+$line-height-def:       1.2;
+$line-height-min:       1.1;
+$line-height-hdr:				1.12;
+
+
+
+$border-radius:					4px;

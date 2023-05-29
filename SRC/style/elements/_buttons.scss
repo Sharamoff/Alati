@@ -1,0 +1,266 @@
+///////////////////////////////////////////////
+
+
+
+// кнопки
+
+
+
+.b--btn {
+	font: $font-size-base $font-family-base;
+	color: $c-white;
+	padding: 1.3rem 3rem;
+	text-align: center;
+	text-decoration: none;
+	border: none;
+	border-radius: $border-radius;
+	background-color: $color-link;
+	line-height: $line-height-min;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+
+	@include media-breakpoint-down(md) {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
+
+	&:hover {
+		background-color: $color-link-hover;
+		color: $c-white;
+	}
+
+	i {
+		margin-right: 0.8rem;
+		font-weight: normal;
+	}
+
+
+
+}
+
+.b--imged {
+	text-transform: uppercase;
+	font-weight: bold;
+	line-height: $line-height-min;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+
+	img {
+		display: block;
+		height: 45px;
+		width: auto;
+		margin-right: 1.5rem;
+	}
+
+	> span {
+		text-align: left;
+		margin-top: 0.3rem;
+	}
+
+}
+
+.b--icon-lg {
+	display: flex;
+	align-items: center;
+
+	i {
+		font-size: 3.5rem;
+	}
+
+}
+
+.b--centered {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.b--angled-r {
+	transition: none;
+
+	&:after {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		right: -60px;
+		top: 30%;
+		border: 60px solid transparent;
+		border-top: 30px solid $color-link;
+
+		@include media-breakpoint-down(xs) {
+			border: 0;
+		}
+
+	}
+
+	&:hover {
+
+		&:after {
+			border-top-color: $color-link-hover;
+		}
+
+	}
+
+}
+
+
+.b--brd {
+	font: $font-size-base $font-family-base;
+	color: $color-link;
+	padding: 1.2rem 3rem;
+	text-align: center;
+	text-decoration: none;
+	border: solid 1px $color-link;
+	border-radius: $border-radius;
+	background-color: transparent;
+	line-height: $line-height-min;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+
+	@include media-breakpoint-down(md) {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
+
+	&:hover {
+		background-color: transparent;
+		color: $color-link-hover;
+		border-color: $color-link-hover;
+		box-shadow: none;
+	}
+
+	i {
+		margin-right: 0.8rem;
+		font-weight: normal;
+	}
+
+}
+
+.b--grd {
+	font: $font-size-base $font-family-base;
+	color: #666666;
+	padding: 1.2rem 3rem;
+	text-align: center;
+	text-decoration: none;
+	border: solid 1px #999999;
+	border-radius: $border-radius;
+	background-color: transparent;
+	line-height: $line-height-min;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+	white-space: nowrap;
+
+	&:hover {
+		background-color: transparent;
+		color: $color-link-hover;
+		border-color: $color-link-hover;
+		box-shadow: none;
+	}
+
+	i {
+		margin-right: 0.8rem;
+		font-weight: normal;
+	}
+
+}
+
+
+
+.b-link {
+	font: $font-size-base $font-family-base;
+	color: $c-white;
+	padding: 1.3rem 3rem;
+	text-align: center;
+	text-decoration: none;
+	border: none;
+	border-radius: $border-radius;
+	background-color: $color-link;
+	line-height: $line-height-min;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+	white-space: nowrap;
+
+	&:hover {
+		background-color: $color-link-hover;
+		color: $c-white;
+	}
+
+}
+
+.b-close {
+	border: none;
+	background: none;
+	position: absolute;
+	top: 1.5rem;
+	right: 2rem;
+	z-index: $zindex-modal + 1;
+	display: inline-block;
+	padding: 0.5rem;
+	font: 2.1rem $fontawesome;
+	font-weight: lighter;
+	color: transparentize($c-gray, 0.25);
+
+	@include media-breakpoint-down(xs) {
+		top: 1rem;
+		right: 1.2rem;
+	}
+
+	&:after {
+		content: "\f00d";
+	}
+
+	&:hover {
+		color: $c-gray;
+	}
+
+}
+
+
+.link-more {
+	display: inline-block;
+	white-space: nowrap;
+	padding: 3px 8px 3px 8px;
+	background: $c-white;
+	border-radius: 3px;
+	margin-left: -8px;
+	margin-top: 0;
+	margin-bottom: 1.5rem;
+
+	&:after {
+		font-family: $fontawesome;
+		font-weight: lighter;
+		content: ' \f178';
+
+	}
+
+}
+
+
+.b-hdrmin {
+	display: inline-block;
+	border: none;
+	float: right;
+	font-size: $font-size-basemin;
+	background: #dddddd;
+	color: $c-gray-light;
+	margin-top: -3.1rem;
+	text-decoration: none;
+	padding: 0.5rem 1.5rem;
+
+	@include media-breakpoint-down(xs) {
+		float: none;
+		margin-top: 1.5rem;
+	}
+
+	&:hover {
+		background: #cccccc;
+		color: $c-black;
+	}
+
+}
+
+
+
+button.disabled,
+button.disabled:hover {
+	background-color: #cccccc;
+	color: $c-gray-light;
+	box-shadow: none;
+}

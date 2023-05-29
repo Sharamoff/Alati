@@ -1,0 +1,114 @@
+///////////////////////////////////////////////
+
+
+
+// баннеры
+
+
+.block-topbanner {
+  border: solid 1px $color-border;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+
+.block-productbanner {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  min-height: 24rem;
+  background: $c-blue url("../img/pbanner_bk.png");
+  margin: 3rem auto 1.5rem auto;
+  position: relative;
+  color: $c-white;
+
+  @include media-breakpoint-down(md) {
+    margin: 0 auto;
+  }
+
+  .productbanner__text {
+    padding: 2rem 3rem 9rem 3rem;
+    width: 50%;
+
+    @include media-breakpoint-down(xs) {
+      width: 100%;
+    }
+
+    .hdr {
+      font-size: 3rem;
+      text-transform: uppercase;
+      line-height: $line-height-hdr;
+    }
+
+    .desc {
+      font-size: $font-size-basemax;
+      color: #c5deff;
+    }
+
+    span {
+      white-space: nowrap;
+    }
+
+  }
+
+  .b-link {
+    position: absolute;
+    bottom: 3rem;
+    left: 3rem;
+    width: 20rem;
+    font: $font-size-base $font-family-base;
+    color: $color-link;
+    padding: 1.3rem 3rem;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: $border-radius;
+    background-color: $c-white;
+    line-height: $line-height-min;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+    white-space: nowrap;
+
+    &:hover {
+      color: $c-white;
+      background-color: $color-link-hover;
+    }
+
+  }
+
+  .productbanner__img {
+    width: 50%;
+    margin-left: 3rem;
+    background-position: left 50%;
+    background-size: cover;
+
+    @include media-breakpoint-down(xs) {
+      display: none;
+    }
+
+  }
+
+  &.productbanner--do {
+    .productbanner__img {background-image: url("../img/pbbk_do.jpg")}
+  }
+
+  &.productbanner--du {
+    .productbanner__img {background-image: url("../img/pbbk_du.jpg");}
+  }
+
+  &.productbanner--dp {
+    .productbanner__img {background-image: url("../img/pbbk_dp.jpg");}
+  }
+
+  &.productbanner--sh {
+    .productbanner__img {background-image: url("../img/pbbk_sh.jpg");}
+  }
+
+  &.productbanner--dn {
+    .productbanner__img {background-image: url("../img/pbbk_dn.jpg");}
+  }
+
+}

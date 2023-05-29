@@ -1,0 +1,154 @@
+.sc_collage {
+	padding-top: 1.5rem;
+	padding-bottom: 3rem;
+
+	@include media-breakpoint-down(sm) {
+		padding-top: 1.5rem;
+		padding-bottom: 1.5rem;
+	}
+
+}
+
+.sc_product-category {
+	background: $color-plate-dark;
+	border-bottom: solid 1px $border-color;
+}
+
+.sc_productlist-popular {
+	background: $color-plate;
+	border-bottom: solid 1px $border-color;
+}
+
+.sc_productlist-sale {
+	background: $color-plate;
+	border-bottom: solid 1px $border-color;
+}
+
+.sc_productlist-discounted {
+	background: $color-plate;
+	border-bottom: solid 1px $border-color;
+}
+
+.sc_about {
+	background: $color-bk-body;
+	border-bottom: solid 1px $border-color;
+}
+
+.sc_categorycol {
+	background: $color-plate-dark;
+	border-bottom: solid 1px $border-color;
+	padding-top: 3.5rem;
+
+	@include media-breakpoint-down(sm) {
+		padding-top: 2rem;
+		padding-bottom: 0;
+	}
+
+}
+
+.sc_whybuy {
+	background: $color-bk-body;
+	border-bottom: solid 1px $border-color;
+}
+
+.sc_ourwork {
+	background: $color-bk-body;
+}
+
+.sc_topbanner {
+	padding: 1.5rem 15px 0 15px;
+
+	@include media-breakpoint-down(sm) {
+		padding: 1.5rem 0 0 0;
+	}
+
+}
+
+.sc_pagehead {
+	padding: 1.5rem 15px 0.5rem 15px;
+
+	@include media-breakpoint-down(sm) {
+	padding: 1.5rem 0 0.5rem 0;
+	}
+
+}
+
+.sc_productlist-filter {
+	background: $color-plate;
+	border-top: solid 1px $border-color;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.sc_productlist {
+	background: $color-plate;
+}
+
+.sc_productitem {
+	background: $color-plate;
+	border-top: solid 1px $border-color;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.sc_productinfo {
+	background: $color-plate;
+}
+
+.sc_productlist-recommend {
+	border-top: solid 1px $border-color;
+	background: $color-plate;
+}
+
+.sc_productlist-watched {
+
+}
+
+
+.sc_page {
+
+}
+
+.sc--gray {
+	background: $color-plate;
+}
+
+.sc--gray-dark {
+	background: $color-plate-dark;
+}
+
+.sc--topborder {
+	border-top: solid 1px $border-color;
+}
+
+.sc_tags {
+
+}
+
+
+.sc_complectchoice {
+	background: $color-bk-body;
+	border-top: solid 1px $border-color;
+	border-bottom: solid 1px $border-color;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

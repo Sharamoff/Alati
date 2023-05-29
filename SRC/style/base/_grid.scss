@@ -1,0 +1,185 @@
+HTML {
+	@include media-breakpoint-only(xs) {
+		font-size: $f-size-base-xs;
+	}
+	@include media-breakpoint-only(sm) {
+		font-size: $f-size-base-sm;
+	}
+	@include media-breakpoint-only(md) {
+		font-size: $f-size-base-md;
+	}
+	@include media-breakpoint-only(lg) {
+		font-size: $f-size-base-lg;
+	}
+	@include media-breakpoint-only(xl) {
+		font-size: $f-size-base-xl;
+	}
+}
+
+
+
+BODY {
+	font-family: $font-family-base;
+	font-size: $font-size-base;
+	background-color: #ffffff;
+	color: $color-text;
+	min-height: 100%;
+	height: auto !important;
+	line-height: $line-height-def;
+	overflow-y: scroll;
+
+	&.modal-open {
+		overflow: hidden;
+		position:fixed;
+		width: 100%;
+	}
+
+}
+
+
+
+.wrapper {
+
+}
+
+
+
+section {
+	@include clearfix;
+
+	@include media-breakpoint-only(xs) {
+		padding-top: 1.5rem;
+		padding-bottom: 1.5rem;
+	}
+
+}
+
+.row {
+	position: relative;
+
+	&.row--margined {
+
+		> [class*="col-"] {
+
+			margin-bottom: 1.5rem;
+
+		}
+
+	}
+
+	&.row--stretched {
+
+		> [class*="col-"] {
+			display: flex;
+			align-items: stretch;
+
+			@include media-breakpoint-only(xs) {
+				display: block;
+			}
+
+		}
+
+	}
+
+	&.row--aligned {
+
+		> [class*="col-"] {
+			display: flex;
+			align-items: center;
+
+			@include media-breakpoint-only(xs) {
+				display: block;
+			}
+
+		}
+
+	}
+
+}
+
+.hidden-xs {
+	@include media-breakpoint-only(xs) {
+		display: none !important;
+	}
+}
+
+.hidden-sm {
+	@include media-breakpoint-only(sm) {
+		display: none !important;
+	}
+}
+
+.hidden-md {
+	@include media-breakpoint-only(md) {
+		display: none !important;
+	}
+}
+
+.hidden-lg {
+	@include media-breakpoint-only(lg) {
+		display: none !important;
+	}
+}
+
+.hidden-xl {
+	@include media-breakpoint-only(xl) {
+		display: none !important;
+	}
+}
+
+.hidden-xs-down {
+	@include media-breakpoint-down(xs) {
+		display: none !important;
+	}
+}
+
+.hidden-sm-down {
+	@include media-breakpoint-down(sm) {
+		display: none !important;
+	}
+}
+
+.hidden-md-down {
+	@include media-breakpoint-down(md) {
+		display: none !important;
+	}
+}
+
+.hidden-lg-down {
+	@include media-breakpoint-down(lg) {
+		display: none !important;
+	}
+}
+
+.hidden-xl-down {
+	@include media-breakpoint-down(xl) {
+		display: none !important;
+	}
+}
+
+
+.pagecontent {
+	position: relative;
+	padding: 1.5rem 15px 3rem 15px;
+
+	@include media-breakpoint-down(sm) {
+		padding: 1.5rem 0 1.5rem 0;
+	}
+
+}
+
+.container-fluid {
+	max-width: $m-max;
+
+	.mainhdr:first-child {
+		margin-top: 1.5rem;
+		margin-bottom: 1.5rem;
+
+		@include media-breakpoint-down(sm) {
+			margin-top: 0;
+			margin-bottom: 1rem;
+		}
+
+	}
+
+}

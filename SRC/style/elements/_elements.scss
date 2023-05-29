@@ -1,0 +1,460 @@
+///////////////////////////////////////////////
+
+
+
+// мелочи
+
+
+
+P {
+	line-height: $line-height-p;
+}
+
+
+.novis {
+	display: none
+}
+
+.novisabs {
+	display: none !important;
+}
+
+
+
+//крошки
+
+.breadcrumb {
+	font-size: $font-size-basemin;
+	background: none;
+	color: $c-black !important;
+	margin-bottom: 3rem;
+	padding: 0;
+
+	@include media-breakpoint-down(md) {
+		margin-bottom: 3rem;
+	}
+
+	@include media-breakpoint-down(xs) {
+		display: block;
+	}
+
+	.breadcrumb-item {
+		padding-left: 0;
+		margin:0 0.8rem 0 0;
+		line-height: $line-height-p;
+
+		@include media-breakpoint-down(xs) {
+			display: inline-block;
+			margin: 0.2rem;
+			line-height: $line-height-def;
+		}
+
+		&:before {
+			color: $c-gray-lighter !important;
+			font-weight: normal !important;
+		}
+
+	}
+
+	.active {
+		color: $c-black !important;
+
+		@include media-breakpoint-down(xs) {
+			display: none;
+		}
+
+	}
+
+	a {
+		color: $c-gray-light;
+		text-decoration: none;
+
+
+		&:hover {
+			color: $color-link-hover;
+		}
+
+	}
+
+}
+
+
+
+//нумерация страниц
+
+.pagination {
+	font-size: $font-size-basemin;
+	width: 100%;
+	border-color: $color-border;
+	justify-content: space-between;
+
+	.page-item {
+		flex-grow: 1;
+		text-align: center;
+	}
+
+	.page-item:first-child,
+	.page-item:last-child {
+		flex-grow: 2;
+
+	}
+
+
+	.page-link {
+		padding: 1rem 0.5rem;
+		text-decoration: none;
+		color: $c-gray-light;
+		background: $c-white;
+		border-radius: 0;
+
+		&:hover {
+			color: $color-link-hover;
+		}
+
+		i {
+			font-size: $font-size-basemin;
+		}
+
+	}
+
+	.page-item.active {
+
+		.page-link {
+			background: $color-plate-dark;
+			color: $c-black;
+			font-weight: bold;
+			border-color: $color-border;
+		}
+
+	}
+
+	.page-item.disabled {
+
+		.page-link {
+			opacity: 0.5;
+		}
+
+	}
+
+}
+
+
+.panel {
+	padding: 1.5rem 3rem;
+	width: 100%;
+
+	@include media-breakpoint-down(md) {
+		padding: 0.5rem 1.5rem;
+	}
+
+	&--white {
+		border: solid 1px $border-color;
+		background-color: $c-white;
+	}
+
+	&--gray {
+		border: solid 1px $color-border-gray;
+		background-color: $color-plate-dark;
+
+		.dlv {
+			border-color: $c-gray-lightermore;
+		}
+
+	}
+
+}
+
+
+//карточка (бывшая .panel)
+.card {
+	border-color: #cccccc;
+	border-radius: 0;
+	margin: 3rem 0;
+	background-color: transparent;
+
+	@include media-breakpoint-only(xs) {
+		margin: 1.5rem auto;
+	}
+
+	.card-header {
+		font: bold $font-size-base $font-family-base;
+		color: $c-black;
+		padding: 0.8rem 2.5rem 0.4rem 2.5rem;
+		line-height: $line-height-min;
+		background-color: $color-plate-dark;
+
+		@include media-breakpoint-only(xs) {
+			padding: 0.8rem 1.5rem 0.4rem 1.5rem;
+		}
+
+	}
+
+	.card-body {
+		background-color: $color-bk-body;
+		padding: 1.5rem 2.5rem 1rem 2.5rem;
+
+		@include media-breakpoint-only(xs) {
+			padding: 1.5rem;
+		}
+
+	}
+
+	&--warn {
+		border: solid 1px $c-orange;
+
+		.card-header {
+			color: $c-white;
+			border-color: $c-orange;
+			background-color: $c-orange;
+		}
+
+	}
+
+	&--info {
+		border: solid 1px $c-blue-dark;
+
+		.card-header {
+			color: $c-white;
+			border-color: $c-blue-dark;
+			background-color: $c-blue-dark;
+		}
+
+	}
+
+}
+
+
+
+.promoting {
+	margin-top: 3rem;
+}
+
+
+.img-inner {
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+	width: 50%;
+	max-width: 290px;
+
+	@include media-breakpoint-only(xs) {
+		width: 100%;
+		margin-bottom: 1rem;
+	}
+
+	&.float-left {
+		margin-right: 1.5rem;
+
+		@include media-breakpoint-only(xs) {
+			margin-right: 0;
+			float: none !important;
+		}
+
+	}
+
+	&.float-right {
+		margin-left: 1.5rem;
+
+		@include media-breakpoint-only(xs) {
+			margin-left: 0;
+			float: none !important;
+		}
+
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+		max-width: 290px;
+		margin-bottom: 0.5rem;
+	}
+
+	p {
+		font: $font-size-basemin $font-family-base;
+		line-height: $line-height-def;
+		margin-top: 0.3rem;
+		margin-bottom: 0.3rem;
+		color: $c-black;
+	}
+
+}
+
+
+.i--down {
+	display: inline-block;
+	color: $c-gray-light;
+
+	&:before {
+		font-family: $fontawesome;
+		font-weight: normal;
+		content: "\f103";
+	}
+
+}
+
+.i--up {
+	display: inline-block;
+	color: $c-gray-light;
+
+	&:before {
+		font-family: $fontawesome;
+		font-weight: normal;
+		content: "\f102";
+	}
+
+}
+
+
+
+
+.slider {
+	margin-left: 0;
+	margin-right: -30px;
+
+	@include media-breakpoint-down(sm) {
+		margin-left: -7px;
+		margin-right: -7px;
+	}
+
+	.slick-slide {
+		margin-left: 0;
+		margin-right: 30px;
+
+		@include media-breakpoint-down(sm) {
+			margin-right: 7px;
+			margin-left: 7px;
+		}
+
+	}
+
+	.slick-track {
+		display: flex;
+		align-items: stretch;
+	}
+
+	.slick-next {
+		right: 0 !important;
+	}
+
+	.slider__item {
+		display: inline-block;
+		position: relative;
+
+		.item_note {
+			margin-left: 1.5rem;
+			margin-right: 1.5rem;
+		}
+
+	}
+
+}
+
+
+// изменение цвета yandex map
+[class*="ymaps-2"][class*="-ground-pane"] {
+	filter: grayscale(75%);
+}
+
+
+.fa-ruble-sign {
+	font-size: $font-size-basemin;
+	margin-left: 3px;
+}
+
+.rub {
+	white-space: nowrap;
+	color: $c-gray !important;
+
+	&:after {
+		font-family: $fontawesome;
+		font-size: smaller;
+		font-weight: normal !important;
+		content: '\f158';
+		margin-left: 0.3rem;
+	}
+
+}
+
+
+.label--new {
+	background-color: #c2e254;
+	color: $c-black;
+}
+
+.label--action {
+	background-color: #ffa861;
+	color: $c-black;
+}
+
+.label--sale {
+	background-color: #ffd861;
+	color: $c-black;
+}
+
+
+
+.img-yamarket {
+	width: 100%;
+	max-width: 230px;
+	height: auto;
+	float: right;
+	margin-bottom: 3rem;
+
+	@include media-breakpoint-down(sm) {
+		float: left;
+		margin-top: 1.5rem;
+	}
+
+}
+
+
+.dlv {
+	height: 1px;
+	border-bottom: solid 1px $color-border;
+}
+
+
+.note {
+	font-size: $font-size-basemin;
+	color: $color-note;
+}
+
+
+
+
+
+// цвета
+.c--uncolored 		{ background-color: #ffffff; } 														//бесцветный
+.c--white-matte 	{ background-color: #e5e5e5; } 														// белый матовый
+.c--white-out			{ background-color: #f3f3f3; } 														// выбеленный
+.c--bronze			 	{ background-color: #8a8266; }														// бронзовый
+.c--bronze-matte 	{ background-color: #8b8170; }														// бронзовый матовый
+.c--bronze-orn	 	{ background: #8a8266 url("../img/c--brorn.png"); background-size: cover  }	// бронзовый с орнаментом
+.c--gold-galv		 	{ background-color: #ffd700; }														// золотой гальваник
+.c--gold-metal	 	{ background-color: #dbb000; }														// золотой гальваник
+.c--chrom-matte 	{ background-color: #8D9093; }														// хром матовый
+.c--chrom-brlnt 	{ background-color: #b3bac0; }														// хром блестящий
+.c--black-matte 	{ background-color: #111111; }														// черный матовый
+.c--grafite 			{ background-color: #444444; }														// грофит
+.c--grafite-matte { background-color: #555555; }														// графит матовый
+.c--matte 				{ background-color: #dddddd; }														// матовый
+.c--lines					{ background: url("../img/c--lines.png") 50% 50%; }				// линес
+
+
+
+.dropdown--hovered {
+	cursor: pointer;
+
+	&:hover .dropdown-menu {
+		display: block;
+		margin-top: 0;
+	}
+
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,73 @@
+///////////////////////////////////////////////
+
+
+
+// колонки категорий
+
+
+.block-categorycol {
+  position: relative;
+  background: $c-white;
+  border: solid 1px $color-border;
+  padding: 1rem 1rem 0 5rem;
+  width: 100%;
+  height: 100%;
+
+  img {
+    width: auto;
+    height: 6rem;
+    position: absolute;
+    top: -1rem;
+    left: -1.5rem;
+
+    @include media-breakpoint-down(sm) {
+      left: -1rem;
+    }
+
+  }
+
+  h3 {
+    line-height: $line-height-min;
+    margin-bottom: 1.5rem;
+
+    span {
+      color: $c-gray-lightermore !important;
+      font-weight: normal !important;
+      white-space: nowrap;
+      font-size: $font-size-base;
+    }
+
+  }
+
+  ul {
+    padding-left: 0;
+    list-style: none;
+
+    > li {
+      padding: 0;
+      margin: 0.8rem 0;
+
+      a {
+        display: inline-block;
+        text-decoration: none;
+        color: $c-gray-light;
+
+        &:hover {
+          color: $color-link-hover;
+        }
+
+        span {
+          color: $c-gray-lightermore !important;
+          white-space: nowrap;
+          font-size: $font-size-basemin;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+

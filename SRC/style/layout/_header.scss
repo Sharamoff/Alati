@@ -1,0 +1,552 @@
+.header {
+	background-color: $color-bk-header;
+	font-size: $font-size-basemin;
+	color: $c-gray;
+	padding: 1.5rem 15px 1.5rem 15px;
+	border-bottom: solid 1px $color-border;
+
+	@include media-breakpoint-up(lg) {
+
+		&.fixed-top,
+		&.sticky-top{
+			position: relative !important;
+		}
+
+	}
+
+	@include media-breakpoint-down(md) {
+		padding: 0.4rem 15px;
+	}
+
+	@include media-breakpoint-down(sm) {
+		padding: 0.4rem 0;
+	}
+
+	.container-fluid {
+		max-width: $m-max;
+	}
+
+}
+
+
+.header-delivery {
+	float: left;
+	white-space: nowrap;
+	color: $c-gray-lighter;
+	margin-right: 3rem;
+
+	span {
+		color: $c-black;
+	}
+
+	@include media-breakpoint-down(lg) {
+		display: none;
+	}
+
+}
+
+.header-region {
+	float: left;
+	display: inline-block;
+	position: relative;
+	top: -4px;
+	padding: 4px 6px 3px 6px;
+	background: $color-plate;
+	border-radius: $border-radius;
+	text-decoration: none;
+
+	i {
+		position: relative;
+		color: $c-gray-lightermore;
+		margin-right: 0.5rem;
+	}
+
+}
+
+.header-cabinet {
+	float: right;
+	display: inline-block;
+	text-decoration: none;
+
+	i {
+		position: relative;
+		color: $c-gray-lightermore;
+		margin-right: 0.5rem;
+	}
+
+}
+
+.header-worktime {
+	float: right;
+	white-space: nowrap;
+	color: $c-gray-lighter;
+
+	span {
+		color: $c-black;
+	}
+
+	@include media-breakpoint-down(md) {
+		display: none;
+	}
+
+}
+
+
+.navbar-toggler {
+	display: none;
+	font-size: 2.5rem;
+	color: $c-black;
+	margin-top: 0.2rem;
+	margin-right: 3rem;
+	padding: 0;
+
+	&:hover {
+		color: $color-link-hover;
+	}
+
+	@include media-breakpoint-down(md) {
+		display: flex;
+		margin-right: 1.5rem;
+	}
+
+}
+
+
+.header-plate {
+	margin-top: -1.5rem;
+
+	@include media-breakpoint-down(md) {
+		margin-top: 0;
+	}
+
+}
+
+
+.header-plate_logo {
+	position: relative;
+	top: -0.4rem;
+	height: 60px;
+	display: flex;
+	align-items: flex-end;
+
+	img {
+		max-width: 230px;
+		width: 100%;
+		height: auto;
+	}
+
+	@include media-breakpoint-down(md) {
+		top: 0;
+		height: auto;
+		align-items: center;
+
+		img {
+			max-width: 108px;
+		}
+
+
+	}
+
+}
+
+.header-plate_nav {
+	display: flex;
+	justify-content: flex-start;
+
+	@include media-breakpoint-down(md) {
+		display: none;
+	}
+
+}
+
+.header-plate_phone {
+	white-space: nowrap;
+	text-align: right;
+	margin-left: -15px;
+	padding: 23px 0 0 0;
+	line-height: 1;
+
+	@include media-breakpoint-down(md) {
+		padding: 7px 0 0 0;
+	}
+
+	.header-phone {
+		display: inline-block;
+		white-space: nowrap;
+		color: $c-gray;
+		font-size: 18px;
+
+		span {
+			font-size: 28px;
+		}
+
+		@include media-breakpoint-down(md) {
+			padding: 0;
+			font-size: 21px;
+
+			span {
+				font-size: 21px;
+				font-weight: bold;
+			}
+
+		}
+
+		@include media-breakpoint-down(sm) {
+			display: none;
+		}
+
+	}
+
+	.header-btn_call {
+		position: relative;
+		top: -4px;
+		width: 30px;
+		height: 30px;
+		line-height: 28px;
+		background: $color-bk-header;
+		border: solid 2px $c-blue;
+		text-align: center;
+		border-radius: 50%;
+		margin-left: 8px;
+		font-size: 18px;
+		color: $color-link;
+		padding: 0 !important;
+
+		&:hover {
+			color: $color-link-hover;
+			border-color: $color-link-hover;
+		}
+
+		@include media-breakpoint-down(md) {
+			top: -1px;
+		}
+
+	}
+
+	.header-btn_cart {
+		position: relative;
+		display: none;
+		width: 40px;
+		height: 30px;
+		background: $c-gray;
+		border: none;
+		text-align: center;
+		border-radius: $border-radius;
+		color: $c-white;
+		margin-left: 15px;
+		padding: 0 !important;
+
+		i {
+			font-size: 14px;
+		}
+
+		&:hover {
+			background-color: $color-link-hover;
+		}
+
+		@include media-breakpoint-down(md) {
+			display: inline-block;
+			top: -3.5px;
+		}
+
+	}
+
+}
+
+
+
+.header-row_tool {
+	margin-top: 1rem;
+}
+
+
+.header-btn_catalog {
+	border: none;
+	background-color: $color-link;
+	font-size: $font-size-base;
+	font-weight: bold;
+	color: $c-white;
+	text-align: left;
+	text-transform: uppercase;
+	height: 35px;
+	width: 100%;
+	padding: 0 1rem 0 1.8rem;
+
+	&:hover {
+		background-color: $c-gray;
+	}
+
+	img {
+		width: 24px;
+		height: 24px;
+		margin-right: 15px;
+	}
+
+	i {
+		float: right;
+		display: inline-block;
+		margin-top: 0.3rem;
+	}
+
+}
+
+.header-fm_search {
+
+	input[type="search"] {
+		border-color: #bbbbbb;
+		border-radius: 0;
+		font-size: $font-size-basemin !important;
+		background: url("../img/i-lupa.svg") right no-repeat;
+		padding: 6px 25px 6px 10px !important;
+		height: 35px !important;
+		line-height: 35px !important;
+	}
+
+}
+
+.header-cart {
+	height: 35px;
+	line-height: 35px;
+	font-size: $font-size-basemin;
+	color: $c-gray-light;
+	background: $color-plate-dark;
+	padding: 0 11rem 0 1.5rem;
+	position: relative;
+	border-radius: $border-radius;
+
+	.cart__price {
+		color: $c-black;
+	}
+
+	.header-btn_tocart {
+		display: inline-block;
+		position: absolute;
+		right: 0;
+		height: 35px;
+		width: 10rem;
+		line-height: 35px;
+		background-color: $c-gray;
+		color: $c-white;
+		text-decoration: none;
+		border-radius: 0 $border-radius $border-radius 0;
+		text-align: center;
+
+		i {
+			margin-right: 0.5rem;
+		}
+
+		&:hover {
+			background-color: $color-link-hover;
+		}
+
+	}
+
+}
+
+.header-btn_search {
+	position: relative;
+	display: none;
+	width: 30px;
+	height: 30px;
+	background: none;
+	border: none;
+	text-align: center;
+	color: $c-gray;
+	margin-right: 15px;
+	padding: 0 !important;
+
+	i {
+		font-size: 2.1rem;
+		margin-top: 0.5rem;
+	}
+
+	@include media-breakpoint-down(md) {
+		display: inline-block;
+	}
+
+}
+
+.header-md_search {
+	width: 100%;
+	background: $color-bk-header;
+	padding: 0.5rem 0 0.5rem 4rem;
+
+	input[type="search"] {
+		border-color: #bbbbbb;
+		border-radius: 0;
+		font-size: $font-size-basemin !important;
+		background: url("../img/i-lupa.svg") right no-repeat;
+		padding: 6px 25px 6px 10px !important;
+		height: 30px !important;
+		line-height: 30px !important;
+	}
+
+	@include media-breakpoint-up(lg) {
+		display: none;
+	}
+
+	@include media-breakpoint-up(sm) {
+		width: 60%;
+	}
+
+}
+
+
+
+
+
+
+.headersticky {
+	height: 0;
+	padding: 0;
+	background-color: $color-bk-header;
+	font-size: $font-size-basemin;
+	color: $c-gray;
+	border-bottom: solid 1px $color-border;
+	opacity: 0;
+	transition: all 0.3s;
+
+	&.visible {
+		height: auto;
+		opacity: 1;
+		padding: 0.5rem 15px;
+	}
+
+	.row {
+		align-items: center;
+	}
+
+}
+
+.headersticky-plate_logo {
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+
+}
+
+.headersticky-btn_catalog {
+	border: none;
+	background-color: $color-link;
+	font-size: $font-size-base;
+	font-weight: bold;
+	color: $c-white;
+	text-transform: uppercase;
+	height:31px;
+	width: 100%;
+	text-align: center;
+
+	&:hover {
+		background-color: $c-gray;
+	}
+
+	img {
+		width: 24px;
+		height: 24px;
+	}
+
+}
+
+.headersticky-fm_search {
+
+	input[type="search"] {
+		border-color: #bbbbbb;
+		border-radius: 0;
+		font-size: $font-size-basemin !important;
+		background: url("../img/i-lupa.svg") right no-repeat;
+		padding: 5px 25px 5px 10px !important;
+		height: 33px !important;
+		line-height: 33px !important;
+	}
+
+}
+
+.headersticky-cart {
+	height: 31px;
+	line-height: 31px;
+	font-size: $font-size-basemin;
+	color: $c-gray-light;
+	background: $color-plate-dark;
+	padding: 0 6rem 0 1rem;
+	position: relative;
+	border-radius: $border-radius;
+	white-space: nowrap;
+
+	.cart__price {
+		color: $c-black;
+	}
+
+	.headersticky-btn_tocart {
+		display: inline-block;
+		position: absolute;
+		right: 0;
+		height: 31px;
+		width: 5rem;
+		line-height: 31px;
+		background-color: $c-gray;
+		color: $c-white;
+		text-decoration: none;
+		border-radius: 0 $border-radius $border-radius 0;
+		text-align: center;
+
+		&:hover {
+			background-color: $color-link-hover;
+		}
+
+	}
+
+}
+
+.headersticky-plate_phone {
+	white-space: nowrap;
+	text-align: right;
+	line-height: 1;
+
+	.headersticky-phone {
+		display: inline-block;
+		white-space: nowrap;
+		color: $c-gray;
+		font-size: 21px;
+
+		span {
+			font-size: 21px;
+			font-weight: bold;
+		}
+
+	}
+
+	.headersticky-btn_call {
+		position: relative;
+		top: -1px;
+		width: 30px;
+		height: 30px;
+		line-height: 28px;
+		background: $color-bk-header;
+		border: solid 2px $c-blue;
+		text-align: center;
+		border-radius: 50%;
+		margin-left: 8px;
+		font-size: 18px;
+		color: $color-link;
+		padding: 0 !important;
+
+		&:hover {
+			color: $color-link-hover;
+			border-color: $color-link-hover;
+		}
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+

@@ -2658,6 +2658,42 @@ ul.cu-list > li:before {
   background: url("../img/showerpartitions/cu_catalogue4.png") no-repeat;
 }
 
+.policyinfo {
+  position: fixed;
+  z-index: 1030;
+  bottom: 5rem;
+  left: 2rem;
+  width: 50%;
+  max-width: none;
+  color: #333333;
+  font-size: 1.6rem;
+  padding: 2rem 6rem 1rem 2rem;
+  background-color: rgba(255, 255, 255, 0.85);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  box-shadow: 0 0 16px 0 rgba(33, 33, 33, 0.25);
+  border: solid 1px #dddddd;
+  border-radius: 0;
+}
+@media (max-width: 991.98px) {
+  .policyinfo {
+    bottom: 2.8rem;
+    left: 0;
+    right: 0;
+    width: 100% !important;
+  }
+}
+.policyinfo p {
+  line-height: 1.428571429;
+}
+.policyinfo .close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 3rem;
+  font-weight: 300;
+}
+
 H1 {
   font-family: PTSans, Arial, Helvetica, sans-serif;
   font-size: 2.24rem;

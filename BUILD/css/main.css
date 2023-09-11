@@ -7631,3 +7631,44 @@ OL.ol--cont > li:before {
   background-size: cover;
   transition: 0.5s;
 }
+
+.block-catalog {
+  margin: 0 3rem 3rem 0;
+}
+.block-catalog h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.12;
+}
+.block-catalog ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.block-catalog ul > li {
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+.block-catalog ul > li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #666666;
+}
+.block-catalog ul > li a:hover {
+  color: #ff6000;
+}
+.block-catalog .block-catalog__morelink:before {
+  content: "Свернуть ";
+}
+.block-catalog .block-catalog__morelink.collapsed:before {
+  content: "Еще ";
+}
+
+@media (max-width: 575.98px) {
+  .block-catalog--continua {
+    margin-top: -2rem;
+  }
+  .block-catalog--continua h3 {
+    display: none;
+  }
+}

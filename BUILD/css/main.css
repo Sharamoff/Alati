@@ -2667,7 +2667,7 @@ ul.cu-list > li:before {
   max-width: none;
   color: #333333;
   font-size: 1.6rem;
-  padding: 2rem 6rem 1rem 2rem;
+  padding: 2rem;
   background-color: rgba(255, 255, 255, 0.85);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
@@ -2686,12 +2686,15 @@ ul.cu-list > li:before {
 .policyinfo p {
   line-height: 1.428571429;
 }
-.policyinfo .close {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  font-size: 3rem;
-  font-weight: 300;
+.policyinfo .btn-close {
+  background: #333333;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem 0.6rem 2rem;
+  margin: 0.5rem 0 0 auto;
+}
+.policyinfo .btn-close:hover {
+  background: #ff6000;
 }
 
 H1 {
@@ -3255,7 +3258,6 @@ A[href^=tel] {
   border-radius: 40px;
   color: white;
   line-height: 30px;
-  white-space: nowrap;
   padding: 0 36px 0 12px;
   text-decoration: none;
   overflow: hidden;

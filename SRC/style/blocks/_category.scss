@@ -172,6 +172,120 @@
 
 
 
+// новое оформление фильтра
+
+.filter__body-alt {
+
+  .block-fltcategory {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 1rem;
+    height: 100%;
+
+    @include media-breakpoint-only(xs) {
+      justify-content: center;
+      margin: 0.5rem 0.5rem 0 0.5rem;
+    }
+
+    .fltcategory__item {
+      display: block;
+      position: relative;
+      flex: 1 1 16rem;
+      max-width: 16rem;
+      max-height: 16rem;
+      overflow: hidden;
+      border: solid 1px $c-white;
+      margin: 1rem 0;
+
+      @include media-breakpoint-only(xs) {
+        margin: 0.5rem;
+      }
+
+      .ttl {
+        position: absolute;
+        bottom: 1rem;
+        left: 0;
+        width: 95%;
+        z-index: 2;
+        background: transparentize($c-white, 0.33);
+        font-size: $font-size-basemin;
+        color: $c-gray;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: $line-height-min;
+        padding: 0.8rem 0.5rem 0.5rem 1.5rem;
+      }
+
+      img {
+        height: 100%;
+        width: auto;
+        object-fit: cover;
+        aspect-ratio: 1;
+      }
+
+      &:hover {
+
+        .ttl {
+          color: $c-black;
+          background: $c-white;
+        }
+
+      }
+
+    }
+
+  }
+
+  .block-fltdrop form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem 1.5rem 1.5rem 1.5rem;
+
+    > div {
+      margin: 0 0.5rem 1rem 0.5rem
+    }
+
+    .select2type {
+      min-width: 16rem;
+
+      @include media-breakpoint-only(xs) {
+        min-width: 100% !important;
+      }
+
+      select {
+        border-color: $color-border !important;
+      }
+
+    }
+
+    .b--grd {
+      height: 3.3rem;
+      padding: 0.8rem;
+      min-width: auto;
+      box-shadow: none;
+
+      @include media-breakpoint-only(xs) {
+        width: 10rem !important;
+      }
+
+      &.disabled,
+      &.disabled:hover {
+        color: $c-gray-lightermore;
+        border-color: $color-border-gray;
+        background: $c-white;
+        cursor: default;
+      }
+
+    }
+
+  }
+
+}
+
+
+
 
 
 

@@ -587,6 +587,31 @@ $('.block-video').on('touchstart', hoverVideo, function (e) {$('video', this).ge
 
 
 
+//dropfilter
+function checkButtonDisabled() {
+	var allFirstOptionsSelected = true;
+	$('#fm_fltdrop select').each(function(){
+		if ($(this).val() !== $(this).find('option:first').val()) {
+			allFirstOptionsSelected = false;
+			return false;
+		}
+	});
+	if (allFirstOptionsSelected) {
+		$('#btn-fltdrop-reset').addClass('disabled');
+	} else {
+		$('#btn-fltdrop-reset').removeClass('disabled');
+	}
+}
+$('#fm_fltdrop select').on('change', function(){
+	checkButtonDisabled();
+});
+$('#btn-fltdrop-reset').click(function(){
+	$('#fm_fltdrop select').each(function(){
+		$(this).val($(this).find('option:first').val()).trigger('change.select2');
+	});
+	checkButtonDisabled();
+});
+
 
 
 

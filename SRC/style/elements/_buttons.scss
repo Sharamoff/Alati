@@ -162,6 +162,21 @@
 
 }
 
+.b--videolist {
+	font-weight: bold !important;
+	text-transform: uppercase;
+	min-width: 29rem;
+
+	@include media-breakpoint-down(sm) {
+		margin-top: -1.5rem;
+	}
+
+	> i {
+		margin-right: 0.8rem;
+		font-weight: normal;
+	}
+
+}
 
 
 .b-link {

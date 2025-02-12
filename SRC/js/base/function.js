@@ -575,7 +575,7 @@ function hoverVideo(e) {
 	$('video', this).get(0).setAttribute('controls','controls');
 }
 function hideVideo(e) {
-	$('.video__i-play', this).css('opacity', '0.5');
+	$('.video__i-play', this).css('opacity', '0.66');
 	$('video', this).get(0).pause();
 	$('video', this).get(0).removeAttribute('controls','controls');
 }
@@ -618,14 +618,14 @@ $('#btn-fltdrop-reset').click(function(){
 
 
 
-
+/*
 // ниже удалить когда подключаться cookie
 $(document).mouseleave(function(e) {
 	if (e.clientY < 10) {
 		$("#modal_pageclose").modal('show');
 	}
 });
-
+*/
 
 
 

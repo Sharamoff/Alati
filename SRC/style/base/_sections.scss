@@ -133,7 +133,11 @@
 }
 
 
-
+.sc_custom-video {
+	@include media-breakpoint-down(sm) {
+		padding:  0 0 3rem 0;
+	}
+}
 
 
 

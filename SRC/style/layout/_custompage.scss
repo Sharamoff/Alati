@@ -333,7 +333,7 @@ ul.cu-list {
 
 		@include media-breakpoint-down(xs) {
 			width: 100%;
-			top: 12rem;
+			top: 10rem;
 			right: -1rem;
 		}
 
@@ -812,6 +812,7 @@ ul.cu-list {
 
 	.cu-catalogpic {
 		background: url("../img/showerenclosures/cu_catalogue1.png") no-repeat;
+		background-size: contain;
 	}
 
 }
@@ -831,6 +832,7 @@ ul.cu-list {
 
 	.cu-catalogpic {
 		background: url("../img/doorsshower/cu_catalogue2.png") no-repeat;
+		background-size: contain;
 	}
 
 }
@@ -849,6 +851,7 @@ ul.cu-list {
 
 	.cu-catalogpic {
 		background: url("../img/bathcurtains/cu_catalogue3.png") no-repeat;
+		background-size: contain;
 	}
 
 }
@@ -868,6 +871,7 @@ ul.cu-list {
 
 	.cu-catalogpic {
 		background: url("../img/showerpartitions/cu_catalogue4.png") no-repeat;
+		background-size: contain;
 	}
 
 }

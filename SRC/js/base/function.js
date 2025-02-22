@@ -564,7 +564,7 @@ $('.tbthfilter_multiselect').multiselect({
 });
 
 
-
+/*
 // выключаем звук на видео
 $('.block-video video').prop('muted', true);
 
@@ -581,7 +581,48 @@ function hideVideo(e) {
 }
 $('.block-video').hover(hoverVideo, hideVideo);
 $('.block-video').on('touchstart', hoverVideo, function (e) {$('video', this).get(0).pause()});
+*/
 
+
+// Запуск видео
+function hoverVideo(e) {
+	$(this).find('video').attr('controls', 'controls');
+}
+function hideVideo(e) {
+	$(this).find('video').removeAttr('controls');
+}
+
+function togglePlayButton(video) {
+	let playButton = $(video).siblings('.video__i-play');
+	if (video.paused) {
+		playButton.css('opacity', '0.33');
+	} else {
+		playButton.css('opacity', '0');
+	}
+}
+
+function startVideo() {
+	// Выключаем звук на видео
+	$('.block-video video').prop('muted', true);
+	
+	$('.block-video').hover(hoverVideo, hideVideo);
+	
+	$('.block-video video').on('play pause', function() {
+		togglePlayButton(this);
+	});
+	
+	$('.video__i-play').on('click', function() {
+		let video = $(this).siblings('video')[0];
+		if (video.paused) {
+			video.play();
+		} else {
+			video.pause();
+		}
+	});
+	
+}
+
+startVideo();
 
 
 //dropfilter

@@ -2241,7 +2241,7 @@ ul.cu-list > li:before {
 @media (max-width: 575.98px) {
   .sc_custom-catalog .cu-catalogpic {
     width: 100%;
-    top: 12rem;
+    top: 10rem;
     right: -1rem;
   }
 }
@@ -2623,6 +2623,7 @@ ul.cu-list > li:before {
 
 .catalog--showerenclosure .cu-catalogpic {
   background: url("../img/showerenclosures/cu_catalogue1.png") no-repeat;
+  background-size: contain;
 }
 
 .collage--doorsshower {
@@ -2636,6 +2637,7 @@ ul.cu-list > li:before {
 
 .catalog--doorsshower .cu-catalogpic {
   background: url("../img/doorsshower/cu_catalogue2.png") no-repeat;
+  background-size: contain;
 }
 
 .collage--bathcurtains {
@@ -2649,6 +2651,7 @@ ul.cu-list > li:before {
 
 .catalog--bathcurtains .cu-catalogpic {
   background: url("../img/bathcurtains/cu_catalogue3.png") no-repeat;
+  background-size: contain;
 }
 
 .collage--showerpartitions {
@@ -2662,6 +2665,7 @@ ul.cu-list > li:before {
 
 .catalog--showerpartitions .cu-catalogpic {
   background: url("../img/showerpartitions/cu_catalogue4.png") no-repeat;
+  background-size: contain;
 }
 
 .policyinfo {

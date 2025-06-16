@@ -566,6 +566,8 @@ section::after {
 }
 
 .header-btn_catalog {
+  display: flex;
+  align-items: center;
   border: none;
   background-color: #0073cf;
   font-size: 1.6rem;
@@ -575,15 +577,17 @@ section::after {
   text-transform: uppercase;
   height: 35px;
   width: 100%;
-  padding: 0 1rem 0 1.8rem;
+  padding: 3px 1rem 0 1.8rem;
 }
 .header-btn_catalog:hover {
   background-color: #333333;
 }
 .header-btn_catalog img {
+  position: relative;
   width: 24px;
   height: 24px;
   margin-right: 15px;
+  top: -2px;
 }
 .header-btn_catalog i {
   float: right;
@@ -591,14 +595,40 @@ section::after {
   margin-top: 0.3rem;
 }
 
+.header-fm_search {
+  display: flex;
+  align-items: center;
+}
 .header-fm_search input[type=search] {
   border-color: #bbbbbb;
   border-radius: 0;
   font-size: 1.4rem !important;
-  background: url("../img/i-lupa.svg") right no-repeat;
   padding: 6px 25px 6px 10px !important;
   height: 35px !important;
   line-height: 35px !important;
+}
+.header-fm_search input[type=submit] {
+  background: #f3f3f3 url("../img/i-lupa.svg") center no-repeat;
+  height: 35px !important;
+  width: 5rem;
+  border: solid 1px #bbbbbb;
+  margin-left: 3px;
+}
+.header-fm_search input[type=submit]:hover {
+  background-color: #dddddd;
+}
+.header-fm_search .search__radios {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+.header-fm_search .search__radios label {
+  font-size: 1.4rem;
+  white-space: nowrap;
+  margin: 0 1rem 0 0.3rem;
+}
+.header-fm_search .search__radios label:last-child {
+  margin-right: 0;
 }
 
 .header-cart {
@@ -657,28 +687,62 @@ section::after {
 }
 
 .header-md_search {
-  width: 100%;
   background: white;
   padding: 0.5rem 0 0.5rem 4rem;
-}
-.header-md_search input[type=search] {
-  border-color: #bbbbbb;
-  border-radius: 0;
-  font-size: 1.4rem !important;
-  background: url("../img/i-lupa.svg") right no-repeat;
-  padding: 6px 25px 6px 10px !important;
-  height: 30px !important;
-  line-height: 30px !important;
 }
 @media (min-width: 992px) {
   .header-md_search {
     display: none;
   }
 }
-@media (min-width: 576px) {
-  .header-md_search {
-    width: 60%;
+.header-md_search > form {
+  display: flex;
+}
+@media (max-width: 767.98px) {
+  .header-md_search > form {
+    flex-wrap: wrap;
   }
+}
+.header-md_search .collapse-header-search {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+}
+.header-md_search .collapse-header-search input[type=search] {
+  border-color: #bbbbbb;
+  border-radius: 0;
+  font-size: 1.4rem !important;
+  padding: 6px 25px 6px 10px !important;
+  height: 35px !important;
+  line-height: 30px !important;
+}
+.header-md_search .collapse-header-search input[type=submit] {
+  background: #f3f3f3 url("../img/i-lupa.svg") center no-repeat;
+  height: 35px !important;
+  width: 4.5rem;
+  border: solid 1px #bbbbbb;
+  margin-left: 3px;
+}
+.header-md_search .collapse-header-search input[type=submit]:hover {
+  background-color: #dddddd;
+}
+.header-md_search .search__radios {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+@media (max-width: 767.98px) {
+  .header-md_search .search__radios {
+    margin-left: 0.7rem;
+  }
+}
+.header-md_search .search__radios label {
+  font-size: 1.4rem;
+  white-space: nowrap;
+  margin: 0 1rem 0 0.3rem !important;
+}
+.header-md_search .search__radios label:last-child {
+  margin-right: 0;
 }
 
 .headersticky {
@@ -724,14 +788,27 @@ section::after {
   height: 24px;
 }
 
+.headersticky-fm_search {
+  display: flex;
+  align-items: center;
+}
 .headersticky-fm_search input[type=search] {
   border-color: #bbbbbb;
   border-radius: 0;
   font-size: 1.4rem !important;
-  background: url("../img/i-lupa.svg") right no-repeat;
   padding: 5px 25px 5px 10px !important;
   height: 33px !important;
   line-height: 33px !important;
+}
+.headersticky-fm_search input[type=submit] {
+  background: #f3f3f3 url("../img/i-lupa.svg") center no-repeat;
+  height: 33px !important;
+  width: 4rem;
+  border: solid 1px #bbbbbb;
+  margin-left: 3px;
+}
+.headersticky-fm_search input[type=submit]:hover {
+  background-color: #dddddd;
 }
 
 .headersticky-cart {
@@ -1074,6 +1151,8 @@ section::after {
 }
 
 .footer-fm_searchcode {
+  display: flex;
+  align-items: center;
   margin-bottom: 3.2rem;
 }
 @media (max-width: 991.98px) {
@@ -1085,13 +1164,23 @@ section::after {
   border-color: #bbbbbb;
   border-radius: 0;
   font-size: 1.4rem !important;
-  background: #f3f3f3 url("../img/i-lupa-s.svg") right no-repeat;
   padding: 0 20px 0 8px !important;
   height: 30px !important;
   line-height: 30px !important;
   margin-top: -2px;
   margin-left: -9px;
   max-width: 290px;
+}
+.footer-fm_searchcode input[type=submit] {
+  background: #f3f3f3 url("../img/i-lupa-s.svg") center no-repeat;
+  height: 30px !important;
+  width: 4rem;
+  border: solid 1px #bbbbbb;
+  margin-left: 2px;
+  margin-top: -2px;
+}
+.footer-fm_searchcode input[type=submit]:hover {
+  background-color: #dddddd;
 }
 
 .footer-logo {

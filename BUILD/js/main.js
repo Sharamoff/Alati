@@ -654,22 +654,4 @@ $('#btn-fltdrop-reset').click(function(){
 });
 
 
-
-
-
-
-
-
-
-
-/*
-// ниже удалить когда подключаться cookie
-$(document).mouseleave(function(e) {
-	if (e.clientY < 10) {
-		$("#modal_pageclose").modal('show');
-	}
-});
-*/
-
-
 });

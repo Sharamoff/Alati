@@ -69,24 +69,38 @@
 }
 
 .footer-fm_searchcode {
+	display: flex;
+	align-items: center;
 	margin-bottom: 3.2rem;
 
 	@include media-breakpoint-down(md) {
 		margin-bottom: 1.5rem;
 	}
 
-
 	input[type="search"] {
 		border-color: #bbbbbb;
 		border-radius: 0;
 		font-size: $font-size-basemin !important;
-		background: $color-plate url("../img/i-lupa-s.svg") right no-repeat;
 		padding: 0 20px 0 8px !important;
 		height: 30px !important;
 		line-height: 30px !important;
 		margin-top: -2px;
 		margin-left: -9px;
 		max-width: 290px;
+	}
+
+	input[type="submit"] {
+		background: $color-plate url("../img/i-lupa-s.svg") center no-repeat;
+		height: 30px !important;
+		width: 4rem;
+		border: solid 1px #bbbbbb;
+		margin-left: 2px;
+		margin-top: -2px;
+
+		&:hover {
+			background-color: $color-border;
+		}
+
 	}
 
 }

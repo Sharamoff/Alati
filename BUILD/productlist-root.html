@@ -98,17 +98,13 @@
 
 
   <div class="collapse header-md_search" id="id_md_search">
-    <form>
-      <div class="collapse-header-search">
-        <input type="search" class="form-control" placeholder="Поиск">
-        <input type="submit" title="Найти" value="">
-      </div>
-      <div class="search__radios">
-        <input type="radio" name="collapse-header__radio" id="collapse-header__radio_all" autocomplete="off" title="Поиск по всему сайту">
-        <label for="collapse-header__radio_all" title="Поиск по всему сайту">везде</label>
-        <input type="radio" name="collapse-header__radio" id="collapse-header__radio_catalog" autocomplete="off" title="Поиск только в каталоге" checked>
-        <label for="collapse-header__radio_catalog" title="Поиск только в каталоге">в каталоге</label>
-      </div>
+    <form class="collapse-fm_search">
+      <input id="fld_collapsesearch" type="search" class="ani--search-fld" placeholder="Поиск по сайту" autocomplete="off">
+      <input id="btn_collapsesearch" type="submit" class="ani--search-btn" title="Найти" value="Найти">
+      <select id="slt_collapsesearch">
+        <option value="all">искать везде</option>
+        <option value="catalog" selected>искать в каталоге</option>
+      </select>
     </form>
   </div>
 
@@ -121,14 +117,12 @@
 
     <div class="col-lg-5 col-xl-6">
       <form class="header-fm_search">
-        <input type="search" class="form-control fld_search" placeholder="Поиск">
-        <input type="submit" title="Найти" value="">
-        <div class="search__radios">
-          <input type="radio" name="header-fm__radio" id="header-fm__radio_all" autocomplete="off" title="Поиск по всему сайту">
-          <label for="header-fm__radio_all" title="Поиск по всему сайту">везде</label>
-          <input type="radio" name="header-fm__radio" id="header-fm__radio_catalog" autocomplete="off" title="Поиск только в каталоге" checked>
-          <label for="header-fm__radio_catalog" title="Поиск только в каталоге">в каталоге</label>
-        </div>
+        <input id="fld_mainsearch" type="search" class="ani--search-fld" placeholder="Поиск по сайту" autocomplete="off">
+        <input id="btn_mainsearch" type="submit" class="ani--search-btn" title="Найти" value="Найти">
+        <select id="slt_mainsearch">
+          <option value="all">искать везде</option>
+          <option value="catalog" selected>искать в каталоге</option>
+        </select>
       </form>
     </div>
 
@@ -161,8 +155,12 @@
 
       <div class="col-lg-3">
         <form class="headersticky-fm_search">
-          <input type="search" class="form-control fld_search" placeholder="Поиск по каталогу товаров">
-          <input type="submit" title="Найти" value="">
+          <input id="fld_stickysearch" type="search" class="ani--search-fld" placeholder="Поиск" autocomplete="off">
+          <input id="btn_stickysearch" type="submit" class="ani--search-btn" title="Найти" value="Найти">
+          <select id="slt_stickysearch">
+            <option value="all">искать везде</option>
+            <option value="catalog" selected>искать в каталоге</option>
+          </select>
         </form>
       </div>
 
@@ -1331,8 +1329,8 @@
 		<div class="col-md-6 col-lg-3 order-3 order-md-4 order-lg-3">
 
 			<form class="footer-fm_searchcode">
-				<input type="search" class="form-control fld_search" placeholder="Поиск по коду товара">
-				<input type="submit" title="Найти по коду товара" value="">
+				<input id="fld_searchcode" class="ani--searchcode-fld" type="search" placeholder="Поиск по коду товара">
+				<input id="btn_searchcode" class="ani--searchcode-btn" type="submit" value="Найти">
 			</form>
 
 			<ul class="footer-menu">

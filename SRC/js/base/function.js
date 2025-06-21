@@ -519,6 +519,7 @@ function CollapseToggle() {
 		$('.hdr-cf[data-toggle]').removeAttr('data-toggle');
 		vHiddet = 0;
 	}
+	/*
 	if (def_width < 576) {
 		$('#id_form-slide').slick('unslick');
 	} else {
@@ -539,6 +540,7 @@ function CollapseToggle() {
 			]
 		});
 	}
+  */
 }
 CollapseToggle();
 $(window).resize(function() {
@@ -652,10 +654,51 @@ $('#btn-fltdrop-reset').click(function(){
 
 
 
+// поиски
 
+$('.ani--search-fld').on('focus', function() {
+	$('.ani--search-btn').addClass('active');
+});
+$('.ani--search-fld').on('blur', function() {
+	$('.ani--search-btn').removeClass('active');
+});
+$('.ani--searchcode-fld').on('focus', function() {
+	$('.ani--searchcode-btn').addClass('active');
+});
+$('.ani--searchcode-fld').on('blur', function() {
+	$('.ani--searchcode-btn').removeClass('active');
+});
 
+$('.header-fm_search #slt_mainsearch').select2({
+	minimumResultsForSearch: -1,
+	dropdownParent: $('.header-fm_search'),
+	templateResult: formatOption
+});
+function formatOption(option) {
+	if (!option.id) return option.text;
+	return $('<span><span class="select2-selected-icon">✓</span>' + option.text + '</span>');
+}
 
+$('.headersticky-fm_search #slt_stickysearch').select2({
+	minimumResultsForSearch: -1,
+	dropdownParent: $('.headersticky-fm_search'),
+	width: '3rem',
+	templateResult: formatOption
+});
+function formatOption(option) {
+	if (!option.id) return option.text;
+	return $('<span><span class="select2-selected-icon">✓</span>' + option.text + '</span>');
+}
 
+$('.collapse-fm_search #slt_collapsesearch').select2({
+	minimumResultsForSearch: -1,
+	dropdownParent: $('.collapse-fm_search'),
+	templateResult: formatOption
+});
+function formatOption(option) {
+	if (!option.id) return option.text;
+	return $('<span><span class="select2-selected-icon">✓</span>' + option.text + '</span>');
+}
 
 
 

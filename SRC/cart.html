@@ -79,8 +79,13 @@
 			</div>
 
 			<div class="col-lg-5 col-xl-6">
-				<form class="header-fm_search">
-					<input type="search" class="form-control fld_search" placeholder="Поиск по каталогу товаров">
+				<form class="collapse-fm_search">
+					<input id="fld_collapsesearch" type="search" class="ani--search-fld" placeholder="Поиск по сайту" autocomplete="off">
+					<input id="btn_collapsesearch" type="submit" class="ani--search-btn" title="Найти" value="Найти">
+					<select id="slt_collapsesearch">
+						<option value="all">искать везде</option>
+						<option value="catalog" selected>искать в каталоге</option>
+					</select>
 				</form>
 			</div>
 
